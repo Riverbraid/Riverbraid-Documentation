@@ -16,14 +16,14 @@ Riverbraid's public surface should help builders quickly understand:
 
 ## Highest leverage public surfaces
 
-1. Riverbraid organization profile
+1. Riverbraid profile surface
 2. Riverbraid-Evaluation-Kit
 3. Riverbraid-Core
 4. Riverbraid-Golds
 5. Riverbraid-Documentation
 6. Primary Gold surfaces such as Safety, Refusal, Judicial, and Crypto
 
-## Recommended organization profile
+## Recommended profile surface text
 
 Open source deterministic integrity floor for AI governance, making structure, authority, and drift visible before trust is granted.
 
@@ -101,7 +101,7 @@ They only improve public readability and discoverability.
 
 The highest value next visibility work is:
 
-1. Organization profile clarity
+1. Profile surface clarity
 2. Pinned repositories
 3. Top repo About descriptions
 4. Top repo topics
