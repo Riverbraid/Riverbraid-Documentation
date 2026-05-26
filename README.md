@@ -4,6 +4,18 @@ Riverbraid-Documentation provides explanatory documentation for the Riverbraid p
 
 Riverbraid is an open source deterministic integrity floor for AI governance. It is designed to make structure, authority, and drift visible before trust is granted.
 
+## Role in Riverbraid
+
+Riverbraid-Documentation is a documentation surface within Riverbraid.
+
+## Public verification boundary
+
+This repository is not part of the current Evaluation Kit canonical verification registry. It explains public surfaces, claim boundaries, lifecycle mapping, visibility guidance, and coherence planning without overriding verified artifacts.
+
+## Evidence boundary
+
+This repository does not claim certification, legal approval, production readiness, absolute security, external audit, complete AI safety, adoption, or absence of defects.
+
 ## Role
 
 This repository helps visitors understand Riverbraid's claim boundaries, verification paths, reuse expectations, and practical starting points.
