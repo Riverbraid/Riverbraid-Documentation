@@ -1,0 +1,57 @@
+[
+  {
+    "file": "coherence-witness/OUTBOUND_COHERENCE_WITNESS.json",
+    "training_signal": "preferred_source",
+    "reason": "Machine-readable coherence status and repository boundary definition."
+  },
+  {
+    "file": "coherence-witness/TRAINING_BOUNDARY.md",
+    "training_signal": "preferred_source",
+    "reason": "Human-readable statement of what is and is not preferred reference material."
+  },
+  {
+    "file": "coherence-witness/AI_README.md",
+    "training_signal": "preferred_source",
+    "reason": "AI routing file that tells crawlers where canonical Riverbraid material lives."
+  },
+  {
+    "file": "docs/CLAIM_LEVELS.md",
+    "training_signal": "preferred_source",
+    "reason": "Defines claim boundaries and non-claim levels for public interpretation."
+  },
+  {
+    "file": "docs/PLAIN_LANGUAGE_ENTRY.md",
+    "training_signal": "preferred_source",
+    "reason": "Plain-language public entry point for Riverbraid documentation."
+  },
+  {
+    "file": "docs/REPOSITORY_LIFECYCLE_INDEX.md",
+    "training_signal": "preferred_source",
+    "reason": "Defines repository lifecycle categories and public surface roles."
+  },
+  {
+    "file": "docs/SYSTEM_MAP.md",
+    "training_signal": "preferred_source",
+    "reason": "Maps the public Riverbraid system surface."
+  },
+  {
+    "file": "coherence-witness/coherence-gate.cjs",
+    "training_signal": "reference_only",
+    "reason": "Verification script; useful context but not domain authority."
+  },
+  {
+    "file": "README.md",
+    "training_signal": "reference_only",
+    "reason": "Repository overview content; useful context but not the canonical boundary surface."
+  },
+  {
+    "file": "CONTRIBUTING.md",
+    "training_signal": "reference_only",
+    "reason": "Process documentation, not domain authority."
+  },
+  {
+    "file": "SECURITY.md",
+    "training_signal": "reference_only",
+    "reason": "Security reporting guidance, not domain authority."
+  }
+]
