@@ -13,7 +13,7 @@ Security posture is inventory only until evidence surfaces are checked and findi
 
 ## Current known findings
 
-1. `Riverbraid-Refusal-Gold/verify.mjs` exited success even when internal verification state was unverified. Tracked as `Riverbraid-Refusal-Gold#6`.
+1. `Riverbraid-Refusal-Gold/verify.mjs` previously exited success even when internal verification state was unverified. Tracked as `Riverbraid-Refusal-Gold#6`. Current state: PATCHED_UNVERIFIED. The file now exits `process.exit(ok ? 0 : 1)`, but no workflow or execution evidence was returned during connector check.
 2. `Riverbraid-Evaluation-Kit/run-verification.sh` executes resolved verifier commands through `bash -lc` and runs `npm ci`. Tracked as `Riverbraid-Evaluation-Kit#8`.
 3. `Riverbraid-Evaluation-Kit/Dockerfile` uses a tag-pinned base image rather than an immutable digest. Tracked as `Riverbraid-Evaluation-Kit#9`.
 4. `Riverbraid-Harness-Gold/runtime-binding.js` skips GPG verification in CI. Tracked as `Riverbraid-Harness-Gold#5`.
