@@ -55,14 +55,15 @@ Changelog entries do not imply release readiness unless tied to a release gate.
 
 ## License communication boundary
 
-License normalization remains locked until the holder decision is made.
-
-The unresolved holder options are:
+License holder decision:
 
 - Copyright (c) 2026 Riverbraid
-- Copyright (c) 2026 Michael John Tilk
 
-No broad license patching should occur until the holder decision is made.
+This resolves the holder decision for future license normalization work.
+
+Broad license normalization still requires a focused audit before patching because license files affect public meaning, legal signals, and reuse expectations across repositories.
+
+No broad license patching should occur without an explicit license normalization gate and exact file inventory.
 
 ## Issue and PR template direction
 
