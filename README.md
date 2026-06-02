@@ -29,6 +29,7 @@ Riverbraid is a starting floor for transparent, inspectable AI governance work. 
 ## What Riverbraid is not
 
 Riverbraid is not:
+
 * A certification authority
 * A legal approval mechanism
 * A production readiness guarantee
@@ -43,6 +44,33 @@ Riverbraid is not:
 3. Inspect the verified registry.
 4. Run or review the available verification path.
 5. Treat any adaptation as its own responsibility.
+
+## Phase 4 scaffold surfaces
+
+Phase 4 documentation is scaffold and informative unless a file explicitly names an evidence surface and a completed gate.
+
+Start here:
+
+* `docs/PHASE_4_SCOPE_RECORD.md`
+* `docs/PHASE_4_ACTIVATION_RECORD.md`
+* `docs/FIRST_READER_PATH.md`
+* `docs/README_SURFACE_STANDARD.md`
+* `docs/OPEN_SOURCE_COMMUNICATION_NORMS.md`
+* `docs/TRUTH_SURFACE_SEPARATION.md`
+* `docs/SECURITY_FLOOR_INVENTORY.md`
+* `docs/REPO_READINESS_MATRIX.md`
+* `docs/VERIFICATION_CONTRACT.md`
+
+Locked or future direction surfaces:
+
+* `docs/DEFERRED_MAINTENANCE_DECISION_LOCKS.md`
+* `docs/REGISTRY_SUCCESSION.md`
+* `docs/EVIDENCE_PORTABILITY.md`
+* `docs/ONE_CLICK_VERIFICATION.md`
+* `docs/POST_QUANTUM_READINESS.md`
+* `docs/CRYPTO_AGILITY.md`
+* `docs/WITNESS_MODEL.md`
+* `docs/SCALE_SEPARATION_GATE.md`
 
 ## Evidence boundary
 
