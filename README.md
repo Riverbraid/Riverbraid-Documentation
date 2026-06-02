@@ -60,6 +60,10 @@ Start here:
 * `docs/SECURITY_FLOOR_INVENTORY.md`
 * `docs/REPO_READINESS_MATRIX.md`
 * `docs/VERIFICATION_CONTRACT.md`
+* `docs/DEMONSTRATION_CASE.md`
+* `docs/COMPLIANCE_MAPPING.md`
+* `docs/DEPENDENCY_BOUNDARY_POLICY.md`
+* `docs/LOCAL_ENVIRONMENT_REMEDIATION.md`
 
 Locked or future direction surfaces:
 
