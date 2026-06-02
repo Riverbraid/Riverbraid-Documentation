@@ -25,7 +25,14 @@ License holder decision is now recorded as:
 
 - Copyright (c) 2026 Riverbraid
 
-Do not perform broad license normalization until a focused license audit identifies the exact files, current license text, expected holder text, and any verifier or release implications.
+Visible license holder mismatch found by repository search was corrected in `Riverbraid-Refusal-Gold/LICENSE`.
+
+Current search-limited license note:
+
+- `Riverbraid-Safety-Gold/LICENSE` uses Riverbraid.
+- `Riverbraid-Refusal-Gold/LICENSE` now uses Riverbraid.
+
+A full license audit remains separate because repository search does not prove every file, release artifact, package manifest, generated artifact, or historical reference has been exhaustively reviewed.
 
 Do not delete or centralize scripts until dependency checks are complete.
 
@@ -39,6 +46,6 @@ Deferred maintenance is not cleanup for convenience.
 
 It affects public meaning, release history, legal signals, and verifier expectations.
 
-The license holder decision resolves one prerequisite, but it does not unlock broad license patching by itself.
+The license holder decision resolves one prerequisite, and the visible mismatch found by search was corrected, but this does not complete a full license audit.
 
-No deferred maintenance action is authorized by this document.
+No deferred maintenance action beyond the exact visible license mismatch correction is authorized by this document.
