@@ -1,7 +1,7 @@
 # Phase 4 Review Pass Addendum
 
 **Status**: SCAFFOLD / INFORMATIVE
-**Purpose**: Review-pass correction record after outside audit comparison
+**Purpose**: Review-pass correction record after outside audit comparison and user-experience audit
 **Completion claim**: NONE
 **Security claim**: NONE
 **External audit claim**: NONE
@@ -10,11 +10,26 @@
 
 ## Purpose
 
-This addendum records safe corrections made after comparing an outside audit summary against current GitHub state.
+This addendum records safe corrections made after comparing an outside audit summary against current GitHub state and reviewing the public repository user experience.
 
 Outside audit input is treated as draft signal only. Current repository files and issue state remain the relevant evidence surfaces.
 
 ## Corrections applied
+
+### Organization profile
+
+The organization profile title was tightened from `The Deterministic Integrity Floor` to `A Deterministic Integrity Floor`.
+
+Reason: the latter better preserves the Phase 4 claim boundary and avoids implying exclusive or final authority.
+
+### Riverbraid-Documentation
+
+The Documentation README now links the Phase 4 remediation addenda:
+
+- `docs/PHASE_4_REMEDIATION_STATUS_ADDENDUM.md`
+- `docs/PHASE_4_REVIEW_PASS_ADDENDUM.md`
+
+Reason: staged remediation and review-pass work should be discoverable from the main Documentation entry surface.
 
 ### Riverbraid-Wasm-Bridge
 
@@ -45,6 +60,14 @@ No implementation or verification claim was upgraded.
 The README was simplified to a bounded experimental runtime surface with evidence boundary, authority boundary, and navigation footer.
 
 No implementation or verification claim was upgraded.
+
+### Riverbraid-Refusal-Gold
+
+The README was cleaned to remove duplicated evidence sections and add a clear registry-membership boundary, evidence boundary, authority boundary, local verification command, and navigation footer.
+
+The stale documentation-only issue `Riverbraid-Refusal-Gold#2` was closed as resolved.
+
+No executable behavior, registry pin, workflow, tag, release, hash, seal, manifest, or protocol state was changed by this README cleanup.
 
 ## Outside audit corrections
 
