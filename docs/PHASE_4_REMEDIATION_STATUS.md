@@ -1,7 +1,7 @@
 # Phase 4 Remediation Status
 
 **Status**: SCAFFOLD / INFORMATIVE
-**Remediation state**: PARTIAL TOOL REMEDIATION APPLIED
+**Remediation state**: TOOL REMEDIATION APPLIED WHERE SAFE
 **Completion claim**: NONE
 **Security claim**: NONE
 **External audit claim**: NONE
@@ -102,7 +102,7 @@ Patched directly:
 - Riverbraid-Cognition
 - Riverbraid-Lite
 
-PR-pending because direct main edits were blocked or avoided:
+Patched through PR and merged because direct main edits were blocked or avoided:
 
 - Riverbraid-Safety-Gold#27
 - Riverbraid-Security-Gold#1
@@ -115,7 +115,7 @@ Already had read-only permissions before this remediation pass:
 
 ### 5. Harness runtime binding correction
 
-`Riverbraid-Harness-Gold/runtime-binding.js` was patched to remove shell-string `execSync`, remove the visible missing `fi` issue, and remove the CI GPG verification skip.
+`Riverbraid-Harness-Gold/runtime-binding.js` and `Riverbraid-Harness-Gold/src/runtime-binding.js` were patched to remove shell-string `execSync`, remove the visible missing `fi` issue, and remove the CI GPG verification skip.
 
 Current boundary:
 
@@ -138,7 +138,7 @@ Patched README surfaces:
 
 ### 8. Claim-hygiene README normalization
 
-High-risk stale or over-strong README surfaces were normalized to Phase 4 claim-boundary language.
+High-risk stale, thin, or over-strong README surfaces were normalized to Phase 4 claim-boundary language.
 
 Patched repositories:
 
@@ -153,6 +153,10 @@ Patched repositories:
 - Riverbraid-Gold-UI
 - Riverbraid-Gold-V2
 - Riverbraid-Security-Gold
+- Riverbraid-Storage-Gold
+- Riverbraid-Bridge-Gold
+- Riverbraid-Bio-Gold
+- Riverbraid-Flow-Gold
 
 ### 9. Simulated verification language
 
@@ -164,6 +168,29 @@ It now prints:
 External Alignment: SIMULATED_NOT_EVIDENCE
 ```
 
+### 10. Shell-string execution reduction
+
+The following shell-string execution surfaces were patched to use argument-array execution:
+
+- `Riverbraid-Harness-Gold/runtime-binding.js`
+- `Riverbraid-Harness-Gold/src/runtime-binding.js`
+- `Riverbraid-Refusal-Gold/bin/shield.mjs`
+- `Riverbraid-Golds/audit-constellation.cjs`
+
+Current boundary:
+
+Patched but execution evidence still needs to be checked.
+
+### 11. Verification depth classification
+
+`docs/VERIFICATION_DEPTH_CLASSIFICATION.md` was created and linked from the Documentation README.
+
+It classifies the current Evaluation Kit registry commands by verification depth, including presence-check-only entries, npm-test verifier entries, and the Core script boundary.
+
+Current boundary:
+
+Initial command-level classification is complete. It does not prove that every package script was executed or that every domain verifier is deep.
+
 ## Still not completed by tool work
 
 - Workflow execution evidence was not checked for every patched commit.
@@ -173,7 +200,7 @@ External Alignment: SIMULATED_NOT_EVIDENCE
 - GPG secrets were not viewed or changed.
 - Full license audit was not completed.
 - Readiness matrix population was not completed.
-- Verification depth classification was not completed for every registry entry.
+- Package-script-level verification depth classification remains incomplete beyond the command-level registry classification.
 - Root SECURITY.md, CONTRIBUTING.md, SUPPORT.md, and LICENSE coverage was not normalized across all repositories.
 
 ## Boundary
