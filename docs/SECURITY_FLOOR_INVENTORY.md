@@ -11,13 +11,14 @@ This document inventories security relevant Riverbraid surfaces without claiming
 
 Security posture is inventory only until evidence surfaces are checked and findings are resolved or explicitly bounded.
 
-## Current known findings
+## Current known findings and remediation state
 
-1. `Riverbraid-Refusal-Gold/verify.mjs` previously exited success even when internal verification state was unverified. Tracked as `Riverbraid-Refusal-Gold#6`. Current state: PATCHED_UNVERIFIED. The file now exits `process.exit(ok ? 0 : 1)`, but no workflow or execution evidence was returned during connector check.
-2. `Riverbraid-Evaluation-Kit/run-verification.sh` executes resolved verifier commands through `bash -lc` and runs `npm ci`. Tracked as `Riverbraid-Evaluation-Kit#8`.
-3. `Riverbraid-Evaluation-Kit/Dockerfile` uses a tag-pinned base image rather than an immutable digest. Tracked as `Riverbraid-Evaluation-Kit#9`.
-4. `Riverbraid-Harness-Gold/runtime-binding.js` skips GPG verification in CI. Tracked as `Riverbraid-Harness-Gold#5`.
-5. `Riverbraid-Core/.github/workflows/verify.yml` clones sibling repositories from mutable branch state and must be distinguished from pinned verification. Tracked as `Riverbraid-Core#6`.
+1. `Riverbraid-Refusal-Gold/verify.mjs` previously exited success even when internal verification state was unverified. Tracked as `Riverbraid-Refusal-Gold#6`. Current state: PATCHED_UNVERIFIED. The file now exits `process.exit(ok ? 0 : 1)`, but the current main commit had no workflow runs or combined statuses returned during the tool evidence check.
+2. `Riverbraid-Evaluation-Kit/run-verification.sh` executes resolved verifier commands through `bash -lc` and runs `npm ci`. Tracked as `Riverbraid-Evaluation-Kit#8`. Current state: OPEN INVENTORY ITEM.
+3. `Riverbraid-Evaluation-Kit/Dockerfile` uses a tag-pinned base image rather than an immutable digest. Tracked as `Riverbraid-Evaluation-Kit#9`. Current state: OPEN INVENTORY ITEM.
+4. `Riverbraid-Harness-Gold/runtime-binding.js` and `Riverbraid-Harness-Gold/src/runtime-binding.js` previously skipped GPG verification in CI and used shell-string execution. Tracked as `Riverbraid-Harness-Gold#5`. Current state: PATCHED_UNVERIFIED. Both files now use argument-array GPG verification and no longer intentionally skip GPG verification in CI, but execution evidence still needs to be checked.
+5. `Riverbraid-Core/.github/workflows/verify.yml` clones sibling repositories from mutable branch state and must be distinguished from pinned verification. Tracked as `Riverbraid-Core#6`. Current state: OPEN INVENTORY ITEM.
+6. `Riverbraid-Gold-V2` previously continued after `npm ci` failure. Tracked as `Riverbraid-Gold-V2#2`. Current state: PARTIALLY_REMEDIATED / PATCHED_UNVERIFIED. The workflow now fails closed on `npm ci` failure, but neighboring repository script coupling remains.
 
 ## Security surfaces to inventory
 
