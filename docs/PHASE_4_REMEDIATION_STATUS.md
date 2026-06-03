@@ -191,6 +191,20 @@ Current boundary:
 
 Initial command-level classification is complete. It does not prove that every package script was executed or that every domain verifier is deep.
 
+### 12. Central support surface
+
+`.github/SUPPORT.md` was added as a central community health support route.
+
+Existing central community health files checked:
+
+- `.github/SECURITY.md`
+- `.github/CONTRIBUTING.md`
+- `.github/SUPPORT.md`
+
+Boundary:
+
+Central community health files do not create guaranteed response times, staffed support operations, production support, security hardening, certification, external audit, or legal support claims.
+
 ## Still not completed by tool work
 
 - Workflow execution evidence was not checked for every patched commit.
@@ -201,7 +215,7 @@ Initial command-level classification is complete. It does not prove that every p
 - Full license audit was not completed.
 - Readiness matrix population was not completed.
 - Package-script-level verification depth classification remains incomplete beyond the command-level registry classification.
-- Root SECURITY.md, CONTRIBUTING.md, SUPPORT.md, and LICENSE coverage was not normalized across all repositories.
+- Root SECURITY.md, CONTRIBUTING.md, SUPPORT.md, and LICENSE coverage was not normalized across all repositories. Central `.github` coverage now exists for SECURITY, CONTRIBUTING, and SUPPORT.
 
 ## Boundary
 
