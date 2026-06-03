@@ -65,6 +65,7 @@ Start here:
 * `docs/DEPENDENCY_BOUNDARY_POLICY.md`
 * `docs/LOCAL_ENVIRONMENT_REMEDIATION.md`
 * `docs/PHASE_4_AUDIT_GAP_REPORT.md`
+* `docs/PHASE_4_REMEDIATION_STATUS.md`
 
 Locked or future direction surfaces:
 
