@@ -66,6 +66,8 @@ Start here:
 * `docs/LOCAL_ENVIRONMENT_REMEDIATION.md`
 * `docs/PHASE_4_AUDIT_GAP_REPORT.md`
 * `docs/PHASE_4_REMEDIATION_STATUS.md`
+* `docs/PHASE_4_REMEDIATION_STATUS_ADDENDUM.md`
+* `docs/PHASE_4_REVIEW_PASS_ADDENDUM.md`
 * `docs/VERIFICATION_DEPTH_CLASSIFICATION.md`
 
 Locked or future direction surfaces:
