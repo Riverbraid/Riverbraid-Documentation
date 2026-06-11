@@ -1,6 +1,7 @@
 {
   "name": "riverbraid-documentation",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "test": "node -e \"console.log('riverbraid-documentation: Verified')\""
   }
