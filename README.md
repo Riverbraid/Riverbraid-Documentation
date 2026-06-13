@@ -59,10 +59,12 @@ Riverbraid is not:
 * `docs/NON_TECHNICAL_REVIEWER_GUIDE.md`
 * `docs/FORKS_AND_ADAPTATIONS.md`
 * `docs/ADOPTION_TIERS.md`
+* `docs/ADOPTABILITY_CHECKLIST.md`
 * `docs/USE_CASE_PROFILES.md`
 * `docs/HYPOTHETICAL_ADOPTION_STORIES.md`
 * `docs/BOUNDED_PROOF_BADGE.md`
 * `docs/REVIEWER_GUIDE.md`
+* `docs/EXTERNAL_REVIEWER_GUIDE.md`
 
 ## Post-Phase-4 coordination surfaces
 
