@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Riverbraid Petal",
+  "type": "object",
+  "required": ["name", "domain", "scope", "verifier_commands", "claim_boundary", "lifecycle"],
+  "properties": {
+    "name": {"type": "string"},
+    "domain": {"type": "string"},
+    "scope": {"type": "string"},
+    "out_of_scope": {"type": "string"},
+    "verifier_commands": {"type": "array", "items": {"type": "string"}},
+    "claim_boundary": {"type": "string"},
+    "non_claims": {"type": "array", "items": {"type": "string"}},
+    "failure_behavior": {"type": "string"},
+    "evidence_requirements": {"type": "array", "items": {"type": "string"}},
+    "steward": {"type": "string"},
+    "lifecycle": {"type": "string"}
+  },
+  "additionalProperties": true
+}
