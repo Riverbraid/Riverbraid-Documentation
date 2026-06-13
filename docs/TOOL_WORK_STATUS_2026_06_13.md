@@ -1,6 +1,6 @@
 # Tool Work Status — 2026-06-13
 
-**Status**: TOOL_WORK_BATCH_REPORT
+**Status**: TOOL_WORK_BATCH_REPORT / RETRY_PASS_UPDATED
 
 ## Boundary
 
@@ -8,7 +8,7 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 
 ## Read-only inventory results
 
-- Open PR residue: NONE_OBSERVED.
+- Open PR residue: NONE_OBERVED in the initial pass and confirmed again after the write pass.
 - High-risk overclaim search returned no direct live-code hits for the searched phrases.
 - Workflow inventory still shows `ubuntu-latest` usage.
 - Workflow inventory still shows tag-pinned actions.
@@ -19,6 +19,7 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `README.md`
 - `docs/PHASE_4_REMEDIATION_STATUS.md`
 - `docs/PHASE_4_AUDIT_GAP_REPORT.md`
+- `docs/TOOL_WORK_STATUS_2026_06_13.md`
 
 ## New docs
 
@@ -87,11 +88,43 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - Closeout comments were added to `Riverbraid-Documentation#13`, `#14`, `#15`, and `#16`.
 - `post-phase-4` label was added to `Riverbraid-Documentation#13`.
 
+## Retry pass completed
+
+The following items were initially blocked by the connector but were later created successfully with tighter wording:
+
+- `docs/NON_TECHNICAL_REVIEWER_GUIDE.md`
+- `docs/PILOT_PROPOSAL_TEMPLATE.md`
+- `docs/ADOPTION_TIERS.md`
+- `docs/VERSION_STATUS.yaml`
+- `schemas/petal.schema.json`
+- `.github/ISSUE_TEMPLATE/external_review_finding.md`
+- `templates/CLAIMS.md`
+- `templates/NON_CLAIMS.md`
+- `templates/EVIDENCE.md`
+- `templates/VERIFICATION.md`
+- `templates/GOVERNANCE.md`
+- `templates/KNOWN_LIMITATIONS.md`
+
 ## Connector-blocked or incomplete operations
 
 - Comment on `Riverbraid-Documentation#17` remained blocked.
 - Some label operations on batch issues remained blocked.
 - Initial longer versions of some documents were blocked, then retried successfully with tighter wording.
+- Nested `templates/adaptation/*` paths were not used; flat `templates/*` files were created instead.
+
+## Post-write audit result
+
+A compare audit from the prior Documentation baseline to current `main` showed changes limited to:
+
+- `README.md`
+- `docs/*`
+- `docs/evidence-plans/*`
+- `schemas/*`
+- `templates/*`
+- `.github/ISSUE_TEMPLATE/*`
+- `.github/pull_request_template.md`
+
+No workflow files, registry files, protocol files, release/tag files, hash/seal/manifest files, or secret files appeared in the changed-file list.
 
 ## Still manual or evidence-gated
 
