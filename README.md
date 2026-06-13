@@ -39,11 +39,42 @@ Riverbraid is not:
 
 ## Suggested reading path
 
-1. Start with `Riverbraid-Evaluation-Kit`.
-2. Review the claim boundaries.
-3. Inspect the verified registry.
-4. Run or review the available verification path.
-5. Treat any adaptation as its own responsibility.
+1. Read `docs/RIVERBRAID_IN_10_MINUTES.md`.
+2. Read `docs/WHAT_PASS_MEANS.md`.
+3. Read `docs/KNOWN_LIMITATIONS.md`.
+4. Start with `Riverbraid-Evaluation-Kit`.
+5. Inspect the verified registry.
+6. Review `docs/VERIFICATION_DEPTH_CLASSIFICATION.md`.
+7. Treat any adaptation as its own responsibility.
+
+## First-reader and adoption surfaces
+
+* `docs/RIVERBRAID_MANIFESTO.md`
+* `docs/RIVERBRAID_IN_10_MINUTES.md`
+* `docs/WHAT_PASS_MEANS.md`
+* `docs/MINIMUM_VIABLE_INSPECTION.md`
+* `docs/GLOSSARY.md`
+* `docs/KNOWN_LIMITATIONS.md`
+* `docs/FAQ_MISCONCEPTIONS.md`
+* `docs/NON_TECHNICAL_REVIEWER_GUIDE.md`
+* `docs/FORKS_AND_ADAPTATIONS.md`
+* `docs/ADOPTION_TIERS.md`
+* `docs/USE_CASE_PROFILES.md`
+* `docs/HYPOTHETICAL_ADOPTION_STORIES.md`
+* `docs/BOUNDED_PROOF_BADGE.md`
+* `docs/REVIEWER_GUIDE.md`
+
+## Post-Phase-4 coordination surfaces
+
+* `docs/POST_PHASE_4_ROADMAP.md`
+* `docs/REGISTRY_SCOPE_GAP.md`
+* `docs/READINESS_MATRIX.md`
+* `docs/SECURITY_SETTINGS_MATRIX.md`
+* `docs/EVIDENCE_LEDGER.md`
+* `docs/CLAIM_LEDGER.md`
+* `docs/CLAIM_EVIDENCE_RECORD.md`
+* `docs/LIFECYCLE.json`
+* `docs/VERSION_STATUS.yaml`
 
 ## Phase 4 scaffold surfaces
 
