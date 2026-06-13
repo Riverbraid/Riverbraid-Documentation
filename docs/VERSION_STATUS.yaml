@@ -1,0 +1,10 @@
+status: SCAFFOLD
+last_updated: '2026-06-13'
+notes: Values must be verified before public reliance.
+fields:
+  - repository
+  - version
+  - status
+  - evidence_source
+  - last_review
+repositories: []
