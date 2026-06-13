@@ -1,6 +1,6 @@
 # Tool Work Status — 2026-06-13
 
-**Status**: TOOL_WORK_BATCH_REPORT / RETRY_PASS_UPDATED
+**Status**: TOOL_WORK_BATCH_REPORT / RETRY_PASS_UPDATED / RECONCILIATION_UPDATED
 
 ## Boundary
 
@@ -8,7 +8,7 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 
 ## Read-only inventory results
 
-- Open PR residue: NONE_OBERVED in the initial pass and confirmed again after the write pass.
+- Open PR residue: NONE_OBSERVED in the initial pass and confirmed again after the write pass.
 - High-risk overclaim search returned no direct live-code hits for the searched phrases.
 - Workflow inventory still shows `ubuntu-latest` usage.
 - Workflow inventory still shows tag-pinned actions.
@@ -34,8 +34,10 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `docs/FORKS_AND_ADAPTATIONS.md`
 - `docs/PILOT_PROPOSAL_TEMPLATE.md`
 - `docs/REVIEWER_GUIDE.md`
+- `docs/EXTERNAL_REVIEWER_GUIDE.md`
 - `docs/CLAIM_EVIDENCE_RECORD.md`
 - `docs/ADOPTION_TIERS.md`
+- `docs/ADOPTABILITY_CHECKLIST.md`
 - `docs/BOUNDED_PROOF_BADGE.md`
 - `docs/LIFECYCLE.json`
 - `docs/VERSION_STATUS.yaml`
@@ -67,6 +69,13 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `templates/VERIFICATION.md`
 - `templates/GOVERNANCE.md`
 - `templates/KNOWN_LIMITATIONS.md`
+- `templates/adaptation/ADAPTATION.md`
+- `templates/adaptation/CLAIMS.md`
+- `templates/adaptation/NON_CLAIMS.md`
+- `templates/adaptation/EVIDENCE.md`
+- `templates/adaptation/VERIFICATION.md`
+- `templates/adaptation/GOVERNANCE.md`
+- `templates/adaptation/KNOWN_LIMITATIONS.md`
 - `.github/pull_request_template.md`
 - `.github/ISSUE_TEMPLATE/registry_change.md`
 - `.github/ISSUE_TEMPLATE/security_concern.md`
@@ -105,12 +114,20 @@ The following items were initially blocked by the connector but were later creat
 - `templates/GOVERNANCE.md`
 - `templates/KNOWN_LIMITATIONS.md`
 
+## Reconciliation pass completed
+
+Additional thread-review reconciliation found and added:
+
+- `docs/EXTERNAL_REVIEWER_GUIDE.md`
+- `docs/ADOPTABILITY_CHECKLIST.md`
+- `templates/adaptation/*` pointer files mirroring the flat template set
+- README links for `docs/EXTERNAL_REVIEWER_GUIDE.md` and `docs/ADOPTABILITY_CHECKLIST.md`
+
 ## Connector-blocked or incomplete operations
 
 - Comment on `Riverbraid-Documentation#17` remained blocked.
 - Some label operations on batch issues remained blocked.
 - Initial longer versions of some documents were blocked, then retried successfully with tighter wording.
-- Nested `templates/adaptation/*` paths were not used; flat `templates/*` files were created instead.
 
 ## Post-write audit result
 
