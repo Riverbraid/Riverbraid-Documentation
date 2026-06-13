@@ -1,0 +1,22 @@
+{
+  "status": "SCAFFOLD",
+  "claim_boundary": "Lifecycle labels require future evidence review.",
+  "allowed_lifecycle_values": [
+    "canonical",
+    "registry-listed",
+    "support",
+    "experimental",
+    "concept-demo",
+    "deprecated",
+    "archived",
+    "external-adaptation",
+    "unknown-pending-evidence"
+  ],
+  "required_fields": [
+    "repository",
+    "lifecycle",
+    "reason",
+    "last_review"
+  ],
+  "repositories": []
+}
