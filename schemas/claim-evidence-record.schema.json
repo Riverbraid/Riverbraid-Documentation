@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Claim Evidence Record",
+  "type": "object",
+  "required": ["claim_id", "claim_text", "claim_level", "timestamp_utc", "repo_commits", "non_claims"],
+  "properties": {
+    "claim_id": {"type": "string"},
+    "claim_text": {"type": "string"},
+    "claim_level": {"type": "string"},
+    "timestamp_utc": {"type": "string"},
+    "repo_commits": {"type": "array", "items": {"type": "object"}},
+    "workflow_runs": {"type": "array", "items": {"type": "object"}},
+    "verifiers": {"type": "array", "items": {"type": "object"}},
+    "evidence_files": {"type": "array", "items": {"type": "string"}},
+    "known_limitations": {"type": "array", "items": {"type": "string"}},
+    "non_claims": {"type": "array", "items": {"type": "string"}},
+    "signature": {"type": "object"}
+  },
+  "additionalProperties": true
+}
