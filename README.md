@@ -40,24 +40,29 @@ Riverbraid is not:
 ## Suggested reading path
 
 1. Read `docs/RIVERBRAID_IN_10_MINUTES.md`.
-2. Read `docs/WHAT_PASS_MEANS.md`.
-3. Read `docs/KNOWN_LIMITATIONS.md`.
-4. Start with `Riverbraid-Evaluation-Kit`.
-5. Inspect the verified registry.
-6. Review `docs/VERIFICATION_DEPTH_CLASSIFICATION.md`.
-7. Treat any adaptation as its own responsibility.
+2. Read `docs/ARCHITECTURE_MAP.md`.
+3. Read `docs/WHAT_PASS_MEANS.md`.
+4. Read `docs/FAILURE_EXPLAINER.md`.
+5. Read `docs/KNOWN_LIMITATIONS.md`.
+6. Start with `Riverbraid-Evaluation-Kit`.
+7. Inspect the verified registry.
+8. Review `docs/VERIFICATION_DEPTH_CLASSIFICATION.md`.
+9. Treat any adaptation as its own responsibility.
 
 ## First-reader and adoption surfaces
 
 * `docs/RIVERBRAID_MANIFESTO.md`
 * `docs/RIVERBRAID_IN_10_MINUTES.md`
+* `docs/ARCHITECTURE_MAP.md`
 * `docs/WHAT_PASS_MEANS.md`
+* `docs/FAILURE_EXPLAINER.md`
 * `docs/MINIMUM_VIABLE_INSPECTION.md`
 * `docs/GLOSSARY.md`
 * `docs/KNOWN_LIMITATIONS.md`
 * `docs/FAQ_MISCONCEPTIONS.md`
 * `docs/NON_TECHNICAL_REVIEWER_GUIDE.md`
 * `docs/FORKS_AND_ADAPTATIONS.md`
+* `docs/INTEGRATION_GUIDE.md`
 * `docs/ADOPTION_TIERS.md`
 * `docs/ADOPTABILITY_CHECKLIST.md`
 * `docs/USE_CASE_PROFILES.md`
@@ -75,44 +80,19 @@ Riverbraid is not:
 * `docs/EVIDENCE_LEDGER.md`
 * `docs/CLAIM_LEDGER.md`
 * `docs/CLAIM_EVIDENCE_RECORD.md`
+* `docs/PRODUCTION_READINESS_GATE.md`
+* `docs/CERTIFICATION_EXPLORATION_BOUNDARY.md`
 * `docs/LIFECYCLE.json`
 * `docs/VERSION_STATUS.yaml`
 
-## Phase 4 scaffold surfaces
+## Evidence plans
 
-Phase 4 documentation is scaffold and informative unless a file explicitly names an evidence surface and a completed gate.
-
-Start here:
-
-* `docs/PHASE_4_SCOPE_RECORD.md`
-* `docs/PHASE_4_ACTIVATION_RECORD.md`
-* `docs/FIRST_READER_PATH.md`
-* `docs/README_SURFACE_STANDARD.md`
-* `docs/OPEN_SOURCE_COMMUNICATION_NORMS.md`
-* `docs/TRUTH_SURFACE_SEPARATION.md`
-* `docs/SECURITY_FLOOR_INVENTORY.md`
-* `docs/REPO_READINESS_MATRIX.md`
-* `docs/VERIFICATION_CONTRACT.md`
-* `docs/DEMONSTRATION_CASE.md`
-* `docs/COMPLIANCE_MAPPING.md`
-* `docs/DEPENDENCY_BOUNDARY_POLICY.md`
-* `docs/LOCAL_ENVIRONMENT_REMEDIATION.md`
-* `docs/PHASE_4_AUDIT_GAP_REPORT.md`
-* `docs/PHASE_4_REMEDIATION_STATUS.md`
-* `docs/PHASE_4_REMEDIATION_STATUS_ADDENDUM.md`
-* `docs/PHASE_4_REVIEW_PASS_ADDENDUM.md`
-* `docs/VERIFICATION_DEPTH_CLASSIFICATION.md`
-
-Locked or future direction surfaces:
-
-* `docs/DEFERRED_MAINTENANCE_DECISION_LOCKS.md`
-* `docs/REGISTRY_SUCCESSION.md`
-* `docs/EVIDENCE_PORTABILITY.md`
-* `docs/ONE_CLICK_VERIFICATION.md`
-* `docs/POST_QUANTUM_READINESS.md`
-* `docs/CRYPTO_AGILITY.md`
-* `docs/WITNESS_MODEL.md`
-* `docs/SCALE_SEPARATION_GATE.md`
+* `docs/evidence-plans/REFUSAL_GOLD_FAIL_CLOSED.md`
+* `docs/evidence-plans/HARNESS_GOLD_GPG_BINDING.md`
+* `docs/evidence-plans/EVALUATION_KIT_ALLOWLIST.md`
+* `docs/evidence-plans/GOLD_V2_DEPENDENCY_BOUNDARY.md`
+* `docs/evidence-plans/AUDIT_FINAL_SCAFFOLD_CHECKS.md`
+* `docs/evidence-plans/PHASE_2_6_PETAL_DEPTH_EXECUTION.md`
 
 ## Evidence boundary
 
