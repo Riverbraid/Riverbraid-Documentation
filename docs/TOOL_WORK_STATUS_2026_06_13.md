@@ -1,6 +1,6 @@
 # Tool Work Status — 2026-06-13
 
-**Status**: TOOL_WORK_BATCH_REPORT / RETRY_PASS_UPDATED / RECONCILIATION_UPDATED / DROP_1_UPDATED / DROP_2_UPDATED
+**Status**: TOOL_WORK_BATCH_REPORT / DROPS_1_2_3_UPDATED
 
 ## Boundary
 
@@ -22,125 +22,7 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `docs/POST_PHASE_4_ROADMAP.md`
 - `docs/TOOL_WORK_STATUS_2026_06_13.md`
 
-## New docs
-
-- `docs/POST_PHASE_4_ROADMAP.md`
-- `docs/KNOWN_LIMITATIONS.md`
-- `docs/WHAT_PASS_MEANS.md`
-- `docs/RIVERBRAID_IN_10_MINUTES.md`
-- `docs/RIVERBRAID_MANIFESTO.md`
-- `docs/ARCHITECTURE_MAP.md`
-- `docs/FAILURE_EXPLAINER.md`
-- `docs/INTEGRATION_GUIDE.md`
-- `docs/PRODUCTION_READINESS_GATE.md`
-- `docs/CERTIFICATION_EXPLORATION_BOUNDARY.md`
-- `docs/PETAL_JSON_CONTRACT.md`
-- `docs/PETAL_CONTRIBUTION_GUIDE.md`
-- `docs/DOMAIN_EXPERT_REVIEW_LANES.md`
-- `docs/GOVERNANCE_AUTHORITY_BOUNDARIES.md`
-- `docs/FORK_TEST_GUIDE.md`
-- `docs/GLOSSARY.md`
-- `docs/FAQ_MISCONCEPTIONS.md`
-- `docs/NON_TECHNICAL_REVIEWER_GUIDE.md`
-- `docs/FORKS_AND_ADAPTATIONS.md`
-- `docs/PILOT_PROPOSAL_TEMPLATE.md`
-- `docs/REVIEWER_GUIDE.md`
-- `docs/EXTERNAL_REVIEWER_GUIDE.md`
-- `docs/CLAIM_EVIDENCE_RECORD.md`
-- `docs/ADOPTION_TIERS.md`
-- `docs/ADOPTABILITY_CHECKLIST.md`
-- `docs/BOUNDED_PROOF_BADGE.md`
-- `docs/LIFECYCLE.json`
-- `docs/VERSION_STATUS.yaml`
-- `docs/REGISTRY_SCOPE_GAP.md`
-- `docs/READINESS_MATRIX.md`
-- `docs/EVIDENCE_LEDGER.md`
-- `docs/CLAIM_LEDGER.md`
-- `docs/SECURITY_SETTINGS_MATRIX.md`
-- `docs/MINIMUM_VIABLE_INSPECTION.md`
-- `docs/USE_CASE_PROFILES.md`
-- `docs/HYPOTHETICAL_ADOPTION_STORIES.md`
-
-## Evidence plans
-
-- `docs/evidence-plans/REFUSAL_GOLD_FAIL_CLOSED.md`
-- `docs/evidence-plans/HARNESS_GOLD_GPG_BINDING.md`
-- `docs/evidence-plans/EVALUATION_KIT_ALLOWLIST.md`
-- `docs/evidence-plans/GOLD_V2_DEPENDENCY_BOUNDARY.md`
-- `docs/evidence-plans/AUDIT_FINAL_SCAFFOLD_CHECKS.md`
-- `docs/evidence-plans/PHASE_2_6_PETAL_DEPTH_EXECUTION.md`
-
-## Schemas, examples, and templates
-
-- `schemas/claim-evidence-record.schema.json`
-- `schemas/petal.schema.json`
-- `schemas/petal-contract.schema.json`
-- `examples/petal.json`
-- `templates/ADAPTATION.md`
-- `templates/CLAIMS.md`
-- `templates/NON_CLAIMS.md`
-- `templates/EVIDENCE.md`
-- `templates/VERIFICATION.md`
-- `templates/GOVERNANCE.md`
-- `templates/KNOWN_LIMITATIONS.md`
-- `templates/adaptation/ADAPTATION.md`
-- `templates/adaptation/CLAIMS.md`
-- `templates/adaptation/NON_CLAIMS.md`
-- `templates/adaptation/EVIDENCE.md`
-- `templates/adaptation/VERIFICATION.md`
-- `templates/adaptation/GOVERNANCE.md`
-- `templates/adaptation/KNOWN_LIMITATIONS.md`
-- `.github/pull_request_template.md`
-- `.github/ISSUE_TEMPLATE/registry_change.md`
-- `.github/ISSUE_TEMPLATE/security_concern.md`
-- `.github/ISSUE_TEMPLATE/new_petal_proposal.md`
-- `.github/ISSUE_TEMPLATE/external_review_finding.md`
-
-## Issues created
-
-- `Riverbraid-Documentation#18`: Post-Phase-4 roadmap.
-- `Riverbraid-Documentation#19`: Manual repository settings confirmation.
-- `Riverbraid-Documentation#20`: Registry succession and expansion gate.
-- `Riverbraid-Documentation#21`: Adoption enablement.
-- `Riverbraid-Documentation#22`: Release and tag discipline.
-- `Riverbraid-Documentation#23`: Review readiness packet.
-- `Riverbraid-Documentation#24`: Execution evidence for patched items.
-- `Riverbraid-Documentation#25`: Phase 2.6 petal depth execution evidence.
-
-## Issue comments and labels
-
-- Closeout comments were added to `Riverbraid-Documentation#13`, `#14`, `#15`, and `#16`.
-- `post-phase-4` label was added to `Riverbraid-Documentation#13`.
-
-## Retry pass completed
-
-The following items were initially blocked by the connector but were later created successfully with tighter wording:
-
-- `docs/NON_TECHNICAL_REVIEWER_GUIDE.md`
-- `docs/PILOT_PROPOSAL_TEMPLATE.md`
-- `docs/ADOPTION_TIERS.md`
-- `docs/VERSION_STATUS.yaml`
-- `schemas/petal.schema.json`
-- `.github/ISSUE_TEMPLATE/external_review_finding.md`
-- `templates/CLAIMS.md`
-- `templates/NON_CLAIMS.md`
-- `templates/EVIDENCE.md`
-- `templates/VERIFICATION.md`
-- `templates/GOVERNANCE.md`
-- `templates/KNOWN_LIMITATIONS.md`
-
-## Reconciliation pass completed
-
-Additional thread-review reconciliation found and added:
-
-- `docs/EXTERNAL_REVIEWER_GUIDE.md`
-- `docs/ADOPTABILITY_CHECKLIST.md`
-- `templates/adaptation/*` pointer files mirroring the flat template set
-- README links for `docs/EXTERNAL_REVIEWER_GUIDE.md` and `docs/ADOPTABILITY_CHECKLIST.md`
-
 ## Drop 1 completed
-
-The first reader-coherence drop has been added:
 
 - `docs/ARCHITECTURE_MAP.md`
 - `docs/FAILURE_EXPLAINER.md`
@@ -152,8 +34,6 @@ The architecture map uses the depth-matching framing: petals are bounded behavio
 
 ## Drop 2 completed
 
-The extension and governance surface drop has been added:
-
 - `docs/PETAL_JSON_CONTRACT.md`
 - `examples/petal.json`
 - `schemas/petal-contract.schema.json`
@@ -164,26 +44,38 @@ The extension and governance surface drop has been added:
 
 These are structural references and decision maps only. They do not admit petals, mutate registry state, assign final authority, or create certification or review claims.
 
-## Connector-blocked or incomplete operations
+## Drop 3 completed
 
-- Comment on `Riverbraid-Documentation#17` remained blocked.
-- Some label operations on batch issues remained blocked.
-- Initial longer versions of some documents were blocked, then retried successfully with tighter wording.
+- `docs/RB_CLI_DESIGN.md`
+- `docs/EVIDENCE_PACKET_GENERATOR.md`
+- `docs/HEALTH_DASHBOARD_PLAN.md`
+- `docs/DRIFT_MONITORING_PLAN.md`
+- `docs/EXTERNAL_REVIEW_PACKET.md`
+- `docs/REPRODUCTION_PACKET.md`
+- `docs/profiles/DATA_CENTER_AI_INFRASTRUCTURE.md`
+- `docs/CUSTOM_VERIFIER_EXAMPLES.md`
 
-## Post-write audit result
+These are design, packet, profile, and example documents only. They do not implement a CLI, evidence generator, dashboard, drift monitor, review process, reproduction process, or custom verifier.
 
-A compare audit from the prior Documentation baseline to current `main` showed changes limited to:
+## Evidence plans
 
-- `README.md`
-- `docs/*`
-- `docs/evidence-plans/*`
-- `schemas/*`
-- `examples/*`
-- `templates/*`
-- `.github/ISSUE_TEMPLATE/*`
-- `.github/pull_request_template.md`
+- `docs/evidence-plans/REFUSAL_GOLD_FAIL_CLOSED.md`
+- `docs/evidence-plans/HARNESS_GOLD_GPG_BINDING.md`
+- `docs/evidence-plans/EVALUATION_KIT_ALLOWLIST.md`
+- `docs/evidence-plans/GOLD_V2_DEPENDENCY_BOUNDARY.md`
+- `docs/evidence-plans/AUDIT_FINAL_SCAFFOLD_CHECKS.md`
+- `docs/evidence-plans/PHASE_2_6_PETAL_DEPTH_EXECUTION.md`
 
-No workflow files, registry files, protocol files, release/tag files, hash/seal/manifest files, or secret files appeared in the changed-file list.
+## Issues created
+
+- `Riverbraid-Documentation#18`: Post-Phase-4 roadmap.
+- `Riverbraid-Documentation#19`: Manual repository settings confirmation.
+- `Riverbraid-Documentation#20`: Registry succession and expansion gate.
+- `Riverbraid-Documentation#21`: Adoption enablement.
+- `Riverbraid-Documentation#22`: Release and tag discipline.
+- `Riverbraid-Documentation#23`: Review readiness packet.
+- `Riverbraid-Documentation#24`: Execution evidence for patched items.
+- `Riverbraid-Documentation#25`: Phase 2.6 petal depth execution evidence.
 
 ## Still manual or evidence-gated
 
@@ -198,6 +90,7 @@ No workflow files, registry files, protocol files, release/tag files, hash/seal/
 - External review.
 - Legal/license judgment beyond inventory.
 - Final governance authority decisions.
+- Implementation of CLI, evidence generator, dashboard, drift monitor, and custom verifier examples.
 
 ## Current claim state
 
