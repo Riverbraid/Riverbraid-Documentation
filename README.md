@@ -81,6 +81,17 @@ Riverbraid is not:
 * `examples/petal.json`
 * `schemas/petal-contract.schema.json`
 
+## Tooling, packets, dashboards, and profiles
+
+* `docs/RB_CLI_DESIGN.md`
+* `docs/EVIDENCE_PACKET_GENERATOR.md`
+* `docs/HEALTH_DASHBOARD_PLAN.md`
+* `docs/DRIFT_MONITORING_PLAN.md`
+* `docs/EXTERNAL_REVIEW_PACKET.md`
+* `docs/REPRODUCTION_PACKET.md`
+* `docs/CUSTOM_VERIFIER_EXAMPLES.md`
+* `docs/profiles/DATA_CENTER_AI_INFRASTRUCTURE.md`
+
 ## Post-Phase-4 coordination surfaces
 
 * `docs/POST_PHASE_4_ROADMAP.md`
