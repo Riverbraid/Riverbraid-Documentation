@@ -21,16 +21,16 @@ If two choices are equally coherent, choose the one that requires less future ma
 Every claim must remain smaller than or equal to the available evidence.
 ```
 
-## Phase 0 — Closeout and documentation
+## Phase 0 - Closeout and documentation
 
 - Update Phase 4 remediation status.
 - Update Phase 4 audit gap report.
-- Reconcile “Phase 4 completion” wording.
+- Reconcile Phase 4 completion wording.
 - Create repo-by-repo issue inventory.
 - Document Evaluation Kit registry scope gap.
 - Add remediation addenda only when historical records need preservation.
 
-## Phase 1 — Evidence reconciliation and issue hygiene
+## Phase 1 - Evidence reconciliation and issue hygiene
 
 - Inventory open issues by repository.
 - Classify issues by phase and evidence state.
@@ -38,16 +38,30 @@ Every claim must remain smaller than or equal to the available evidence.
 - Update stale issue bodies.
 - Confirm open PR residue.
 
-## Phase 2 — Execution evidence for patched items
+## Phase 2 - Execution evidence for patched items
 
 - Refusal-Gold fail-closed behavior.
 - Harness-Gold runtime GPG binding.
 - Evaluation Kit verifier allowlist.
 - Gold-V2 dependency fail-closed behavior and neighboring-repo boundary.
 - Bounded `audit_final.js` scaffold checks.
-- Petal functional-logic status where applicable.
 
-## Phase 3 — GitHub security settings and repository hardening
+## Phase 2.6 - Petal depth execution evidence
+
+The question is not whether a petal is generally functional. The question is whether its claimed verifier depth matches its actual verifier depth.
+
+A presence-check petal is coherent when it documents that limit.
+
+The four petals requiring execution evidence are:
+
+- Memory-Gold: stub-to-behavioral replacement done, execution unverified.
+- Judicial-Gold: stub-to-behavioral replacement done, execution unverified.
+- Safety-Gold: stub-to-behavioral replacement done, execution unverified.
+- Integration-Gold: stub-to-behavioral replacement done, execution unverified.
+
+Reference: `docs/evidence-plans/PHASE_2_6_PETAL_DEPTH_EXECUTION.md`.
+
+## Phase 3 - GitHub security settings and repository hardening
 
 - Branch protection.
 - Repository rulesets.
@@ -58,7 +72,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Dependabot.
 - CodeQL/default scanning where relevant.
 
-## Phase 4 — Secret, history, and artifact safety
+## Phase 4 - Secret, history, and artifact safety
 
 - Git history secret scanning.
 - Release asset review if releases exist.
@@ -66,7 +80,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Local evidence packet review before external sharing.
 - Current-tree versus history-audit boundary documentation.
 
-## Phase 5 — Reproducibility and supply chain
+## Phase 5 - Reproducibility and supply chain
 
 - Docker digest evidence and possible pinning.
 - Environment lock update.
@@ -74,7 +88,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Tag-pinned action inventory and SHA-pin decision.
 - Dependency policy, vulnerability scans, license scans, and SBOM decision.
 
-## Phase 6 — Verification depth and registry truth
+## Phase 6 - Verification depth and registry truth
 
 - Package-script-level verifier classification.
 - Presence-check-only repository handling.
@@ -83,7 +97,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Refusal-Gold pin refresh only after evidence.
 - Registry expansion gate before moving beyond 30 entries.
 
-## Phase 7 — License, community health, and contribution infrastructure
+## Phase 7 - License, community health, and contribution infrastructure
 
 - Full license audit.
 - Central `.github` versus per-repo community health decision.
@@ -91,7 +105,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - PR templates.
 - Security concern, registry change, new petal, and external finding templates.
 
-## Phase 8 — Readiness matrix and evidence ledger
+## Phase 8 - Readiness matrix and evidence ledger
 
 - Repo-by-repo readiness matrix.
 - Evidence ledger.
@@ -99,7 +113,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Known limitations ledger.
 - Claim Evidence Record format.
 
-## Phase 9 — Release, tag, and archive discipline
+## Phase 9 - Release, tag, and archive discipline
 
 - Tag inventory.
 - Release inventory.
@@ -108,19 +122,25 @@ Every claim must remain smaller than or equal to the available evidence.
 - Signed tag and checksum decisions.
 - Evidence attachment policy.
 
-## Phase 10 — First-reader and public coherence
+## Phase 10 - First-reader and public coherence
+
+Status: DROP 1 PARTIALLY IMPLEMENTED.
 
 - Riverbraid Manifesto.
 - Riverbraid in 10 minutes.
 - What PASS means / does not mean.
 - Minimum viable inspection path.
 - Architecture map.
+- Failure explainer.
+- Integration guide.
 - Glossary.
 - Known limitations.
 - FAQ / misconceptions.
 - Non-technical reviewer guide.
+- Production readiness gate.
+- Certification exploration boundary.
 
-## Phase 10A — Adoption enablement
+## Phase 10A - Adoption enablement
 
 - Adoption tiers.
 - Forks and adaptations policy.
@@ -132,7 +152,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Adoptability checklist.
 - Bounded proof badge.
 
-## Phase 11 — Developer experience and tooling
+## Phase 11 - Developer experience and tooling
 
 - `rb` CLI design.
 - Evidence packet generator.
@@ -141,7 +161,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Integration guide.
 - Custom verifier examples.
 
-## Phase 12 — Ecosystem visualization and coherence
+## Phase 12 - Ecosystem visualization and coherence
 
 - Interactive system map.
 - Static health dashboard.
@@ -150,21 +170,21 @@ Every claim must remain smaller than or equal to the available evidence.
 - Version/status reference.
 - Claim drift, registry drift, workflow drift, and verifier-depth drift monitoring.
 
-## Phase 13 — Extension API and third-party integration
+## Phase 13 - Extension API and third-party integration
 
 - File-based `petal.json` contract.
 - New petal proposal template.
 - Third-party contribution framework.
 - Compatibility language.
 
-## Phase 14 — Domain expert onboarding and petal governance
+## Phase 14 - Domain expert onboarding and petal governance
 
 - Petal contribution guide.
 - Domain expert review lanes.
 - Petal governance model.
 - Guardian dashboards.
 
-## Phase 15 — Governance authority boundaries
+## Phase 15 - Governance authority boundaries
 
 - Core authority.
 - Registry authority.
@@ -173,7 +193,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Dispute resolution.
 - Staged governance path.
 
-## Phase 16 — External review and audit readiness
+## Phase 16 - External review and audit readiness
 
 - External review packet.
 - Known limitations packet.
@@ -183,7 +203,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Evidence map.
 - Fork test guide.
 
-## Phase 17 — Applied governance profiles
+## Phase 17 - Applied governance profiles
 
 - AI governance transparency.
 - Data-center / AI infrastructure governance.
@@ -194,7 +214,7 @@ Every claim must remain smaller than or equal to the available evidence.
 - Research lab reproducibility.
 - Climate / energy infrastructure accountability.
 
-## Phase 18 — Data-center and AI infrastructure governance profile
+## Phase 18 - Data-center and AI infrastructure governance profile
 
 Future applied profile only. Not a Core mutation.
 
@@ -209,13 +229,13 @@ Potential surfaces:
 - agency responsibility map
 - claim-vs-evidence separation
 
-## Phase 19 — Production readiness gate
+## Phase 19 - Production readiness gate
 
 No production-readiness claim until security, reproducibility, registry succession, verifier depth, and external review are materially stronger.
 
 Most important gate: independent security review of CI/CD, registry update mechanisms, and secret handling.
 
-## Phase 20 — Certification or compliance exploration
+## Phase 20 - Certification or compliance exploration
 
 Optional and far future. Do not use certification language until a real process, criteria, evidence review, scope, expiration, and anti-false-certification policy exist.
 
