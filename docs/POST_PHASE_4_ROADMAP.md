@@ -154,12 +154,16 @@ Status: DROP 1 IMPLEMENTED AS BOUNDED DOCUMENTATION.
 
 ## Phase 11 - Developer experience and tooling
 
+Status: DROP 3 IMPLEMENTED AS DESIGN DOCUMENTATION.
+
 - `rb` CLI design.
 - Evidence packet generator.
 - Health dashboard.
 - Custom verifier examples.
 
 ## Phase 12 - Ecosystem visualization and coherence
+
+Status: DROP 3 PARTIALLY IMPLEMENTED AS PLAN DOCUMENTATION.
 
 - Interactive system map.
 - Static health dashboard.
@@ -201,6 +205,8 @@ Status: DROP 2 PARTIALLY IMPLEMENTED AS DECISION MAP.
 
 ## Phase 16 - External review and audit readiness
 
+Status: DROP 3 PARTIALLY IMPLEMENTED AS PACKET SCAFFOLDS.
+
 - External review packet.
 - Known limitations packet.
 - Reproduction packet.
@@ -210,6 +216,8 @@ Status: DROP 2 PARTIALLY IMPLEMENTED AS DECISION MAP.
 - Fork test guide.
 
 ## Phase 17 - Applied governance profiles
+
+Status: DROP 3 PARTIALLY IMPLEMENTED AS APPLIED PROFILE DRAFT.
 
 - AI governance transparency.
 - Data-center / AI infrastructure governance.
@@ -221,6 +229,8 @@ Status: DROP 2 PARTIALLY IMPLEMENTED AS DECISION MAP.
 - Climate / energy infrastructure accountability.
 
 ## Phase 18 - Data-center and AI infrastructure governance profile
+
+Status: DROP 3 IMPLEMENTED AS APPLIED PROFILE DRAFT.
 
 Future applied profile only. Not a Core mutation.
 
