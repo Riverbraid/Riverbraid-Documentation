@@ -1,6 +1,6 @@
 # Tool Work Status — 2026-06-13
 
-**Status**: TOOL_WORK_BATCH_REPORT / RETRY_PASS_UPDATED / RECONCILIATION_UPDATED
+**Status**: TOOL_WORK_BATCH_REPORT / RETRY_PASS_UPDATED / RECONCILIATION_UPDATED / DROP_1_UPDATED
 
 ## Boundary
 
@@ -19,6 +19,7 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `README.md`
 - `docs/PHASE_4_REMEDIATION_STATUS.md`
 - `docs/PHASE_4_AUDIT_GAP_REPORT.md`
+- `docs/POST_PHASE_4_ROADMAP.md`
 - `docs/TOOL_WORK_STATUS_2026_06_13.md`
 
 ## New docs
@@ -28,6 +29,11 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `docs/WHAT_PASS_MEANS.md`
 - `docs/RIVERBRAID_IN_10_MINUTES.md`
 - `docs/RIVERBRAID_MANIFESTO.md`
+- `docs/ARCHITECTURE_MAP.md`
+- `docs/FAILURE_EXPLAINER.md`
+- `docs/INTEGRATION_GUIDE.md`
+- `docs/PRODUCTION_READINESS_GATE.md`
+- `docs/CERTIFICATION_EXPLORATION_BOUNDARY.md`
 - `docs/GLOSSARY.md`
 - `docs/FAQ_MISCONCEPTIONS.md`
 - `docs/NON_TECHNICAL_REVIEWER_GUIDE.md`
@@ -57,6 +63,7 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `docs/evidence-plans/EVALUATION_KIT_ALLOWLIST.md`
 - `docs/evidence-plans/GOLD_V2_DEPENDENCY_BOUNDARY.md`
 - `docs/evidence-plans/AUDIT_FINAL_SCAFFOLD_CHECKS.md`
+- `docs/evidence-plans/PHASE_2_6_PETAL_DEPTH_EXECUTION.md`
 
 ## Schemas and templates
 
@@ -91,6 +98,7 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `Riverbraid-Documentation#22`: Release and tag discipline.
 - `Riverbraid-Documentation#23`: Review readiness packet.
 - `Riverbraid-Documentation#24`: Execution evidence for patched items.
+- `Riverbraid-Documentation#25`: Phase 2.6 petal depth execution evidence.
 
 ## Issue comments and labels
 
@@ -123,6 +131,18 @@ Additional thread-review reconciliation found and added:
 - `templates/adaptation/*` pointer files mirroring the flat template set
 - README links for `docs/EXTERNAL_REVIEWER_GUIDE.md` and `docs/ADOPTABILITY_CHECKLIST.md`
 
+## Drop 1 completed
+
+The first reader-coherence drop has been added:
+
+- `docs/ARCHITECTURE_MAP.md`
+- `docs/FAILURE_EXPLAINER.md`
+- `docs/INTEGRATION_GUIDE.md`
+- `docs/PRODUCTION_READINESS_GATE.md`
+- `docs/CERTIFICATION_EXPLORATION_BOUNDARY.md`
+
+The architecture map uses the depth-matching framing: petals are bounded behavioral verifiers, not general-purpose functional tools. Presence-check petals are coherent when they accurately document that limit.
+
 ## Connector-blocked or incomplete operations
 
 - Comment on `Riverbraid-Documentation#17` remained blocked.
@@ -146,6 +166,7 @@ No workflow files, registry files, protocol files, release/tag files, hash/seal/
 ## Still manual or evidence-gated
 
 - Execution evidence for patched items.
+- Phase 2.6 petal depth execution evidence.
 - Workflow hardening changes.
 - Registry pin refresh or expansion.
 - Release/tag work.
