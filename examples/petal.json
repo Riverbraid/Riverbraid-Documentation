@@ -1,0 +1,41 @@
+{
+  "_comment": "Example petal.json for a hypothetical Transparency-Gold petal. Not a canonical Riverbraid repository.",
+  "id": "Riverbraid-Transparency-Gold",
+  "domain": "transparency",
+  "version": "0.1.0",
+  "claim_level": "DETERMINISTIC_VECTOR_CHECK",
+  "verifier": {
+    "command": "npm test",
+    "entry_point": "verifier.mjs",
+    "exit_zero_means": "transparency boundary fields are present, non-empty, and match expected deterministic vectors",
+    "exit_nonzero_means": "boundary violated, required field absent, vector mismatch, or verifier could not complete"
+  },
+  "failure_behavior": "exits 1 on any missing required field, null or empty boundary value, or deterministic vector mismatch. Does not silently pass on ambiguous input.",
+  "scope": [
+    "checks that TRANSPARENCY_BOUNDARY.json exists at the configured path",
+    "checks that required fields are present and non-empty",
+    "runs deterministic test vectors against the configured disclosure schema",
+    "confirms verifier exits nonzero when any required field is absent or tampered"
+  ],
+  "non_scope": [
+    "does not evaluate the quality or completeness of disclosure content",
+    "does not check live runtime transparency behavior",
+    "does not audit actual disclosure outputs against regulatory requirements",
+    "does not certify regulatory compliance of any kind",
+    "does not substitute for external audit or legal review",
+    "does not check repositories outside its configured scope",
+    "does not claim production readiness"
+  ],
+  "maintainer": "Riverbraid",
+  "dependencies": [
+    "Riverbraid-Core"
+  ],
+  "execution_evidence": "SCAFFOLD_ONLY",
+  "registry_status": "not_in_registry",
+  "known_limitations": [
+    "this is an example petal only; no real repository or verifier exists",
+    "claim_level is illustrative; a real petal at this level requires deterministic test vectors and negative-case evidence",
+    "execution_evidence is SCAFFOLD_ONLY; no output has been produced"
+  ],
+  "adaptation_note": null
+}
