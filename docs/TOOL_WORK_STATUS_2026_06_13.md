@@ -1,6 +1,6 @@
 # Tool Work Status — 2026-06-13
 
-**Status**: TOOL_WORK_BATCH_REPORT / RETRY_PASS_UPDATED / RECONCILIATION_UPDATED / DROP_1_UPDATED
+**Status**: TOOL_WORK_BATCH_REPORT / RETRY_PASS_UPDATED / RECONCILIATION_UPDATED / DROP_1_UPDATED / DROP_2_UPDATED
 
 ## Boundary
 
@@ -34,6 +34,11 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `docs/INTEGRATION_GUIDE.md`
 - `docs/PRODUCTION_READINESS_GATE.md`
 - `docs/CERTIFICATION_EXPLORATION_BOUNDARY.md`
+- `docs/PETAL_JSON_CONTRACT.md`
+- `docs/PETAL_CONTRIBUTION_GUIDE.md`
+- `docs/DOMAIN_EXPERT_REVIEW_LANES.md`
+- `docs/GOVERNANCE_AUTHORITY_BOUNDARIES.md`
+- `docs/FORK_TEST_GUIDE.md`
 - `docs/GLOSSARY.md`
 - `docs/FAQ_MISCONCEPTIONS.md`
 - `docs/NON_TECHNICAL_REVIEWER_GUIDE.md`
@@ -65,10 +70,12 @@ This batch did not mutate registry pins, releases, tags, protocol files, hashes,
 - `docs/evidence-plans/AUDIT_FINAL_SCAFFOLD_CHECKS.md`
 - `docs/evidence-plans/PHASE_2_6_PETAL_DEPTH_EXECUTION.md`
 
-## Schemas and templates
+## Schemas, examples, and templates
 
 - `schemas/claim-evidence-record.schema.json`
 - `schemas/petal.schema.json`
+- `schemas/petal-contract.schema.json`
+- `examples/petal.json`
 - `templates/ADAPTATION.md`
 - `templates/CLAIMS.md`
 - `templates/NON_CLAIMS.md`
@@ -143,6 +150,20 @@ The first reader-coherence drop has been added:
 
 The architecture map uses the depth-matching framing: petals are bounded behavioral verifiers, not general-purpose functional tools. Presence-check petals are coherent when they accurately document that limit.
 
+## Drop 2 completed
+
+The extension and governance surface drop has been added:
+
+- `docs/PETAL_JSON_CONTRACT.md`
+- `examples/petal.json`
+- `schemas/petal-contract.schema.json`
+- `docs/PETAL_CONTRIBUTION_GUIDE.md`
+- `docs/DOMAIN_EXPERT_REVIEW_LANES.md`
+- `docs/GOVERNANCE_AUTHORITY_BOUNDARIES.md`
+- `docs/FORK_TEST_GUIDE.md`
+
+These are structural references and decision maps only. They do not admit petals, mutate registry state, assign final authority, or create certification or review claims.
+
 ## Connector-blocked or incomplete operations
 
 - Comment on `Riverbraid-Documentation#17` remained blocked.
@@ -157,6 +178,7 @@ A compare audit from the prior Documentation baseline to current `main` showed c
 - `docs/*`
 - `docs/evidence-plans/*`
 - `schemas/*`
+- `examples/*`
 - `templates/*`
 - `.github/ISSUE_TEMPLATE/*`
 - `.github/pull_request_template.md`
@@ -175,6 +197,7 @@ No workflow files, registry files, protocol files, release/tag files, hash/seal/
 - Git history and release asset scanning.
 - External review.
 - Legal/license judgment beyond inventory.
+- Final governance authority decisions.
 
 ## Current claim state
 
