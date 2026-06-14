@@ -124,7 +124,7 @@ Reference: `docs/evidence-plans/PHASE_2_6_PETAL_DEPTH_EXECUTION.md`.
 
 ## Phase 10 - First-reader and public coherence
 
-Status: DROP 1 PARTIALLY IMPLEMENTED.
+Status: DROP 1 IMPLEMENTED AS BOUNDED DOCUMENTATION.
 
 - Riverbraid Manifesto.
 - Riverbraid in 10 minutes.
@@ -157,8 +157,6 @@ Status: DROP 1 PARTIALLY IMPLEMENTED.
 - `rb` CLI design.
 - Evidence packet generator.
 - Health dashboard.
-- Failure explainer.
-- Integration guide.
 - Custom verifier examples.
 
 ## Phase 12 - Ecosystem visualization and coherence
@@ -172,12 +170,18 @@ Status: DROP 1 PARTIALLY IMPLEMENTED.
 
 ## Phase 13 - Extension API and third-party integration
 
+Status: DROP 2 PARTIALLY IMPLEMENTED AS BOUNDED DOCUMENTATION.
+
 - File-based `petal.json` contract.
+- Example `examples/petal.json`.
+- `schemas/petal-contract.schema.json`.
 - New petal proposal template.
 - Third-party contribution framework.
 - Compatibility language.
 
 ## Phase 14 - Domain expert onboarding and petal governance
+
+Status: DROP 2 PARTIALLY IMPLEMENTED AS BOUNDED DOCUMENTATION.
 
 - Petal contribution guide.
 - Domain expert review lanes.
@@ -185,6 +189,8 @@ Status: DROP 1 PARTIALLY IMPLEMENTED.
 - Guardian dashboards.
 
 ## Phase 15 - Governance authority boundaries
+
+Status: DROP 2 PARTIALLY IMPLEMENTED AS DECISION MAP.
 
 - Core authority.
 - Registry authority.
