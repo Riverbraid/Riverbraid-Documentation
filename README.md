@@ -71,6 +71,16 @@ Riverbraid is not:
 * `docs/REVIEWER_GUIDE.md`
 * `docs/EXTERNAL_REVIEWER_GUIDE.md`
 
+## Extension and governance surfaces
+
+* `docs/PETAL_JSON_CONTRACT.md`
+* `docs/PETAL_CONTRIBUTION_GUIDE.md`
+* `docs/DOMAIN_EXPERT_REVIEW_LANES.md`
+* `docs/GOVERNANCE_AUTHORITY_BOUNDARIES.md`
+* `docs/FORK_TEST_GUIDE.md`
+* `examples/petal.json`
+* `schemas/petal-contract.schema.json`
+
 ## Post-Phase-4 coordination surfaces
 
 * `docs/POST_PHASE_4_ROADMAP.md`
