@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Riverbraid Petal Manifest Contract",
+  "type": "object",
+  "required": [
+    "id",
+    "domain",
+    "version",
+    "claim_level",
+    "verifier",
+    "failure_behavior",
+    "scope",
+    "non_scope",
+    "maintainer"
+  ],
+  "properties": {
+    "_comment": {"type": "string"},
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+-[A-Za-z0-9_.-]+-Gold$"},
+    "domain": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[A-Za-z0-9_.-]+)?$"},
+    "claim_level": {
+      "type": "string",
+      "enum": [
+        "PRESENCE_CHECK",
+        "SCHEMA_CHECK",
+        "DETERMINISTIC_VECTOR_CHECK",
+        "NEGATIVE_FAIL_CLOSED_CHECK",
+        "DOMAIN_INVARIANT_CHECK",
+        "CROSS_REPO_CONSISTENCY_CHECK",
+        "CRYPTOGRAPHIC_PROVENANCE_CHECK"
+      ]
+    },
+    "verifier": {
+      "type": "object",
+      "required": ["command", "entry_point", "exit_zero_means", "exit_nonzero_means"],
+      "properties": {
+        "command": {"type": "string", "minLength": 1},
+        "entry_point": {"type": "string", "minLength": 1},
+        "exit_zero_means": {"type": "string", "minLength": 1},
+        "exit_nonzero_means": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "failure_behavior": {"type": "string", "minLength": 1},
+    "scope": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "non_scope": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "maintainer": {"type": "string", "minLength": 1},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "execution_evidence": {
+      "type": "string",
+      "enum": ["EXECUTION_EVIDENCED", "PATCHED_UNVERIFIED", "SCAFFOLD_ONLY", "ABSENT"]
+    },
+    "registry_status": {"type": "string"},
+    "known_limitations": {"type": "array", "items": {"type": "string"}},
+    "adaptation_note": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}
