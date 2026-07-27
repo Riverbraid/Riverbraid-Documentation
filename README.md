@@ -10,7 +10,7 @@ Riverbraid-Documentation is a documentation surface within Riverbraid.
 
 ## Public verification boundary
 
-This repository is not part of the current Evaluation Kit canonical verification registry. It explains public surfaces, claim boundaries, lifecycle mapping, visibility guidance, and coherence planning without overriding verified artifacts.
+This repository is not part of the current Evaluation Kit pinned verification registry. It explains public surfaces, claim boundaries, lifecycle mapping, visibility guidance, and coherence planning without overriding verified artifacts.
 
 ## Evidence boundary
 
@@ -20,7 +20,7 @@ This repository does not claim certification, legal approval, production readine
 
 This repository helps visitors understand Riverbraid's claim boundaries, verification paths, reuse expectations, and practical starting points.
 
-It is a documentation surface. It does not override code, pinned registry entries, test vectors, repository specific verification commands, or public Evaluation Kit outputs.
+It is a documentation surface. It does not override code, pinned registry entries, test vectors, repository-specific verification commands, or public Evaluation Kit outputs.
 
 ## What Riverbraid is
 
@@ -45,9 +45,11 @@ Riverbraid is not:
 4. Read `docs/FAILURE_EXPLAINER.md`.
 5. Read `docs/KNOWN_LIMITATIONS.md`.
 6. Start with `Riverbraid-Evaluation-Kit`.
-7. Inspect the verified registry.
+7. Inspect the pinned registry and exact workflow evidence.
 8. Review `docs/VERIFICATION_DEPTH_CLASSIFICATION.md`.
-9. Treat any adaptation as its own responsibility.
+9. Review `docs/PUBLIC_REPOSITORY_CLASSIFICATION_CROSSWALK.md`.
+10. Before F0–F4 implementation work, review `docs/F0_F4_CONTROL_PACKAGE_SOURCE_CUSTODY.md`.
+11. Treat any adaptation as its own responsibility.
 
 ## First-reader and adoption surfaces
 
@@ -70,6 +72,13 @@ Riverbraid is not:
 * `docs/BOUNDED_PROOF_BADGE.md`
 * `docs/REVIEWER_GUIDE.md`
 * `docs/EXTERNAL_REVIEWER_GUIDE.md`
+
+## F0–F4 comparison-preparation surfaces
+
+* `docs/F0_F4_CONTROL_PACKAGE_SOURCE_CUSTODY.md`
+* `docs/F0_F4_GITHUB_COMPARISON_PREPARATION.json`
+
+These files are noncontrolling preparation records. They do not upload, adopt, execute, validate, or advance the F0–F4 control package.
 
 ## Extension and governance surfaces
 
@@ -106,7 +115,7 @@ Riverbraid is not:
 * `docs/LIFECYCLE.json`
 * `docs/VERSION_STATUS.yaml`
 
-## Evidence plans
+## Evidence plans and records
 
 * `docs/evidence-plans/REFUSAL_GOLD_FAIL_CLOSED.md`
 * `docs/evidence-plans/HARNESS_GOLD_GPG_BINDING.md`
