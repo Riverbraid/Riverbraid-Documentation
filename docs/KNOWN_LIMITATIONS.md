@@ -20,12 +20,12 @@ Known limitations are the current edge of the evidence. They are not hidden. The
 | Presence-check-only repositories exist | BOUNDED | Keep as explicitly limited surfaces or upgrade under a separately authorized registry gate. |
 | Refusal-Gold fail-closed patch requires execution evidence | PATCHED_UNVERIFIED | Valid and invalid-state execution outputs proving fail-closed behavior. |
 | Harness-Gold runtime GPG patch requires execution evidence | PATCHED_UNVERIFIED | Valid and invalid GPG-path outputs proving fail-closed behavior. |
-| Evaluation Kit command policy and lifecycle-script controls | EXECUTED_BOUNDED | Exact draft head `277065f8af53a0de5eaecd1671b970c8d8cfec40` passed run `30282086825`, including unsupported-command denial, lifecycle-script denial, Docker build, and `REPRODUCTION_MATCH`. Network dependency acquisition remains. |
-| Evaluation Kit dependency acquisition uses the network | OPEN / NON_HERMETIC_BOUNDARY | Adopt an offline or frozen dependency profile with exact identities and execution evidence, or explicitly accept the bounded network-dependent profile. |
+| Evaluation Kit command, lifecycle-script, action, runner, and base-image controls | EXECUTED_BOUNDED | Exact draft head `868341e2a26ae1ac912be170a2930034b06623ee` passed run `30286309516`, job `90044856022`, including base-identity matching, unsupported-command denial, lifecycle-script denial, digest-pinned Docker build, and `REPRODUCTION_MATCH`. |
+| Evaluation Kit OS and npm dependency acquisition use the network | OPEN / NON_HERMETIC_BOUNDARY | Adopt an offline or frozen OS/npm dependency profile with exact identities and execution evidence, or explicitly accept the bounded network-dependent profile. |
+| Evaluation Kit Docker base-image digest | PINNED_AND_EXECUTED | Bound to `sha256:ecc9a2581f8588014a49a523a9ed146d27963f6d988d11bd16bbdcb3598f5f98`; exact-head identity check and full evaluation passed. Future tag/digest drift remains a review trigger. |
 | Gold-V2 dependency boundary remains | PATCHED_UNVERIFIED / DEPENDENCY_BOUNDARY | Dependency-boundary decision and failure evidence. |
-| Docker base image digest remains evidence-gated | OPEN | Exact image digest evidence, Dockerfile update decision, and environment-lock update. |
-| Workflows use `ubuntu-latest` in some repositories | INVENTORY_ITEM | Runner pinning decision or explicit reproducibility boundary. |
-| Workflows use tag-pinned actions in some repositories | INVENTORY_ITEM | SHA-pinning decision or explicit boundary. |
+| Some repositories still use movable runner labels | INVENTORY_ITEM | Pin critical workflows or preserve an explicit mutable-runner boundary. |
+| Some repositories still use tag-pinned actions | INVENTORY_ITEM | SHA-pin implementation-critical actions or preserve an explicit action-identity boundary. |
 | Current-tree audit is not a full history audit | BOUNDED_NON_FINDING | Git history, release asset, workflow artifact, and local archive scans. |
 | F0–F4 manual and schema filenames were not located on the observed GitHub surface | BOUNDED_NON_FINDING | No action is required unless an exact candidate is identified. Any future comparison must use byte-preserving retrieval and SHA-256 in a common controlled workspace. |
 | F0–F4 control package is not adopted or executed | PROPOSED_NOT_ADOPTED_NOT_EXECUTED | Explicit founder adoption and subsequent gate-authorized execution only when the controlling package permits it. |
