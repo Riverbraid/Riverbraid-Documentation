@@ -1,0 +1,38 @@
+name: Audit Final Scaffold Evidence
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-audit-final-scaffolds:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Documentation evidence harness
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '20.11.0'
+
+      - name: Execute exact scaffold scripts and disposable negative cases
+        run: node scripts/verify-audit-final-scaffolds.mjs
+
+      - name: Verify and expose bounded result record
+        run: |
+          set -euo pipefail
+          test -f audit-final-scaffold-results.json
+          node -e "const fs=require('fs'); const r=JSON.parse(fs.readFileSync('audit-final-scaffold-results.json','utf8')); if(r.status!=='AUDIT_FINAL_SCAFFOLD_CONDITIONS_MET'||r.repository_results.length!==7) process.exit(1); console.log('AUDIT_FINAL_SCAFFOLD_RESULT_RECORD_VALID')"
+          cat audit-final-scaffold-results.json
