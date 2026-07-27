@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_id": "rb.f0-f4-github-comparison-preparation",
+  "schema_version": "1.0.0",
+  "record_id": "RB-F0-F4-GITHUB-COMPARISON-PREPARATION-001",
+  "status": "ACTIVE_NONCONTROLLING_COMPARISON_PREPARATION",
+  "as_of": "2026-07-27",
+  "current_active_gate": "P0-DISC-001",
+  "control_package_status": "PROPOSED_NOT_ADOPTED_NOT_EXECUTED",
+  "purpose": "Prepare an exact observational boundary for a future explicitly authorized byte-level comparison without adopting, executing, modifying, or publishing the F0-F4 control package.",
+  "github_observation_scope": {
+    "account": "Riverbraid",
+    "account_type": "USER",
+    "public_repository_count": 52,
+    "included_surfaces": [
+      "connected public repository default-branch exact-name and content search",
+      "known open preparation pull request changed-file inventories",
+      "direct inspection of likely authority, evaluation, registry, documentation, and profile repositories"
+    ],
+    "known_open_preparation_pull_requests": [
+      "Riverbraid/Riverbraid-Core#7",
+      "Riverbraid/Riverbraid-Evaluation-Kit#13",
+      "Riverbraid/Riverbraid-Golds#6",
+      "Riverbraid/Riverbraid-Documentation#26"
+    ],
+    "limitations": [
+      "GitHub code search does not prove absence from all historical commits.",
+      "GitHub code search does not prove absence from every unindexed or unenumerated branch.",
+      "A not-located result is not an absence proof and is not a custody determination for non-GitHub sources."
+    ]
+  },
+  "expected_files": [
+    {
+      "filename": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001_v0.2-proposed.md",
+      "role": "IMPLEMENTATION_CONTROL_MANUAL",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001-ADOPTION-001_v0.2-proposed.md",
+      "role": "ADOPTION_INSTRUMENT_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "p0-discovery.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "p0-exclusion-ledger.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "p0-reentry-state.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "p0-expected-record-registry.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "evaluator-result.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "evidence-envelope.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "fault-record.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "repair-attempt.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "current-status-view.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "advancement-authority.schema.json",
+      "role": "SCHEMA_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    },
+    {
+      "filename": "SCHEMA-BUNDLE-MANIFEST.json",
+      "role": "SCHEMA_BUNDLE_MANIFEST_CANDIDATE",
+      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
+    }
+  ],
+  "candidate_identity": {
+    "github_candidate_bytes": "NONE_IDENTIFIED",
+    "candidate_repository": null,
+    "candidate_ref": null,
+    "candidate_paths": [],
+    "candidate_git_blob_shas": [],
+    "candidate_sha256_digests": [],
+    "comparison_status": "NOT_READY_NO_GITHUB_CANDIDATE"
+  },
+  "actual_source_relationship": {
+    "reported_custody": "LIBRARY_AND_SOURCE_BOUND_LOCAL_PACKAGE",
+    "github_is_current_canonical_custody": false,
+    "actual_bytes_in_this_record": false,
+    "actual_sha256_computed_in_common_workspace": false,
+    "source_identity_status": "REQUIRES_BYTE_PRESERVING_RETRIEVAL_WHEN_EXPLICITLY_DIRECTED"
+  },
+  "future_comparison_contract": {
+    "authorization": "EXPLICIT_DIRECTION_REQUIRED",
+    "mode": "READ_ONLY_BYTE_LEVEL_COMPARISON",
+    "required_inputs": [
+      "actual source file bytes",
+      "explicit GitHub repository and exact ref or other candidate byte source",
+      "exact candidate path for every compared file"
+    ],
+    "required_observations": [
+      "byte length",
+      "SHA-256 digest",
+      "UTF-8 BOM presence",
+      "line-ending profile",
+      "byte-identical or byte-different result",
+      "missing-source or missing-candidate status"
+    ],
+    "allowed_results": [
+      "BYTE_IDENTICAL",
+      "BYTE_DIFFERENT",
+      "SOURCE_MISSING",
+      "CANDIDATE_MISSING",
+      "NOT_COMPARABLE"
+    ]
+  },
+  "prohibited_inferences_and_actions": [
+    "Do not infer adoption from file existence or identity.",
+    "Do not infer execution from validation or comparison.",
+    "Do not publish, merge, normalize, rewrite, or repair source bytes during comparison preparation.",
+    "Do not treat a Git blob SHA as a SHA-256 digest.",
+    "Do not advance P0, F0, F1, F2, F3, or F4 from this record."
+  ],
+  "review_triggers": [
+    "an exact GitHub candidate path and ref is identified",
+    "actual source bytes or digests change",
+    "the control package is adopted or superseded",
+    "the active gate changes",
+    "a broader GitHub history or branch inventory is performed"
+  ]
+}
