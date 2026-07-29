@@ -1,100 +1,110 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "schema_id": "rb.f0-f4-github-comparison-preparation",
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "record_id": "RB-F0-F4-GITHUB-COMPARISON-PREPARATION-001",
   "status": "ACTIVE_NONCONTROLLING_COMPARISON_PREPARATION",
-  "as_of": "2026-07-27",
+  "as_of": "2026-07-29",
   "current_active_gate": "P0-DISC-001",
-  "control_package_status": "PROPOSED_NOT_ADOPTED_NOT_EXECUTED",
-  "purpose": "Prepare an exact observational boundary for a future explicitly authorized byte-level comparison without adopting, executing, modifying, or publishing the F0-F4 control package.",
+  "control_package_status": "V0_3_PROPOSED_NOT_ADOPTED_NOT_EXECUTED",
+  "current_control_basis": {
+    "record_id": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001",
+    "version": "v0.3-proposed",
+    "reported_filename": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001_v0.3-proposed.md",
+    "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE",
+    "adoption_status": "NOT_ISSUED",
+    "p0_status": "NOT_EXECUTED",
+    "f0_status": "NOT_CLOSED"
+  },
+  "historical_lineage": [
+    {
+      "version": "v0.2-proposed",
+      "manual_filename": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001_v0.2-proposed.md",
+      "adoption_filename": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001-ADOPTION-001_v0.2-proposed.md",
+      "relationship": "HISTORICAL_NOT_CURRENT_ADOPTION_BASIS"
+    }
+  ],
+  "known_identity_split": {
+    "status": "PRE_P0_HOLD",
+    "current_v0_3_manual_digest_prefix": "1643b9d9",
+    "legacy_machine_package_manual_digest_prefix": "5a6be223",
+    "full_digest_status": "SOURCE_BOUND_BYTES_REQUIRED",
+    "required_resolution": [
+      "Retrieve the exact v0.3 manual and companion-profile bytes without normalization.",
+      "Rebuild or amend the machine manifest and package identity against those bytes.",
+      "Issue one successor or consolidated adoption identity for the coherent v0.3 package.",
+      "Recompute the complete checksum set.",
+      "Rerun schema, fixture, RFC 8785, and end-to-end self-tests.",
+      "Preserve v0.2 as historical lineage.",
+      "Emit PRE_P0_READY only if all applicable holds are closed."
+    ]
+  },
+  "purpose": "Prepare an exact GitHub observation and source-custody boundary without adopting, executing, modifying, publishing, or merging the F0-F4 control package.",
   "github_observation_scope": {
     "account": "Riverbraid",
     "account_type": "USER",
-    "public_repository_count": 52,
+    "accessible_public_repository_count": 52,
     "included_surfaces": [
       "connected public repository default-branch exact-name and content search",
-      "known open preparation pull request changed-file inventories",
-      "direct inspection of likely authority, evaluation, registry, documentation, and profile repositories"
+      "direct inspection of likely authority, evaluation, registry, documentation, and profile repositories",
+      "current metadata for eight known open preparation pull requests"
     ],
     "known_open_preparation_pull_requests": [
       "Riverbraid/Riverbraid-Core#7",
       "Riverbraid/Riverbraid-Evaluation-Kit#13",
       "Riverbraid/Riverbraid-Golds#6",
-      "Riverbraid/Riverbraid-Documentation#26"
+      "Riverbraid/Riverbraid-Documentation#26",
+      "Riverbraid/.github#5",
+      "Riverbraid/Riverbraid-Refusal-Gold#7",
+      "Riverbraid/Riverbraid-Harness-Gold#6",
+      "Riverbraid/Riverbraid-Gold-V2#3"
     ],
     "limitations": [
       "GitHub code search does not prove absence from all historical commits.",
       "GitHub code search does not prove absence from every unindexed or unenumerated branch.",
-      "A not-located result is not an absence proof and is not a custody determination for non-GitHub sources."
+      "A not-located result is not an absence proof and is not a custody determination for non-GitHub sources.",
+      "Pull-request heads may change after observation and must be revalidated before later use."
     ]
   },
-  "expected_files": [
+  "expected_current_source_roles": [
     {
-      "filename": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001_v0.2-proposed.md",
       "role": "IMPLEMENTATION_CONTROL_MANUAL",
+      "reported_filename": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001_v0.3-proposed.md",
       "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
     },
     {
-      "filename": "RB-F0-F4-IMPLEMENTATION-CONTROL-MANUAL-001-ADOPTION-001_v0.2-proposed.md",
-      "role": "ADOPTION_INSTRUMENT_CANDIDATE",
+      "role": "SUCCESSOR_OR_CONSOLIDATED_ADOPTION_IDENTITY",
+      "reported_filename": "SOURCE_BOUND_FILENAME_REQUIRED",
       "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
     },
     {
-      "filename": "p0-discovery.schema.json",
-      "role": "SCHEMA_CANDIDATE",
+      "role": "COMPANION_PROFILE",
+      "reported_filename": "SOURCE_BOUND_FILENAME_REQUIRED",
       "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
     },
     {
-      "filename": "p0-exclusion-ledger.schema.json",
-      "role": "SCHEMA_CANDIDATE",
+      "role": "MACHINE_PACKAGE_MANIFEST",
+      "reported_filename": "SOURCE_BOUND_FILENAME_REQUIRED",
       "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
     },
     {
-      "filename": "p0-reentry-state.schema.json",
-      "role": "SCHEMA_CANDIDATE",
-      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
-    },
-    {
-      "filename": "p0-expected-record-registry.schema.json",
-      "role": "SCHEMA_CANDIDATE",
-      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
-    },
-    {
-      "filename": "evaluator-result.schema.json",
-      "role": "SCHEMA_CANDIDATE",
-      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
-    },
-    {
-      "filename": "evidence-envelope.schema.json",
-      "role": "SCHEMA_CANDIDATE",
-      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
-    },
-    {
-      "filename": "fault-record.schema.json",
-      "role": "SCHEMA_CANDIDATE",
-      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
-    },
-    {
-      "filename": "repair-attempt.schema.json",
-      "role": "SCHEMA_CANDIDATE",
-      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
-    },
-    {
-      "filename": "current-status-view.schema.json",
-      "role": "SCHEMA_CANDIDATE",
-      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
-    },
-    {
-      "filename": "advancement-authority.schema.json",
-      "role": "SCHEMA_CANDIDATE",
-      "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
-    },
-    {
-      "filename": "SCHEMA-BUNDLE-MANIFEST.json",
-      "role": "SCHEMA_BUNDLE_MANIFEST_CANDIDATE",
+      "role": "COMPLETE_SHA256_SET",
+      "reported_filename": "SOURCE_BOUND_FILENAME_REQUIRED",
       "github_status": "NOT_LOCATED_ON_OBSERVED_SURFACE"
     }
+  ],
+  "schema_candidates_expected_in_source_bundle": [
+    "p0-discovery.schema.json",
+    "p0-exclusion-ledger.schema.json",
+    "p0-reentry-state.schema.json",
+    "p0-expected-record-registry.schema.json",
+    "evaluator-result.schema.json",
+    "evidence-envelope.schema.json",
+    "fault-record.schema.json",
+    "repair-attempt.schema.json",
+    "current-status-view.schema.json",
+    "advancement-authority.schema.json",
+    "SCHEMA-BUNDLE-MANIFEST.json"
   ],
   "candidate_identity": {
     "github_candidate_bytes": "NONE_IDENTIFIED",
@@ -106,19 +116,20 @@
     "comparison_status": "NOT_READY_NO_GITHUB_CANDIDATE"
   },
   "actual_source_relationship": {
-    "reported_custody": "LIBRARY_AND_SOURCE_BOUND_LOCAL_PACKAGE",
+    "reported_custody": "DOCUMENT_LIBRARY_AND_SOURCE_BOUND_LOCAL_PACKAGE",
     "github_is_current_canonical_custody": false,
-    "actual_bytes_in_this_record": false,
-    "actual_sha256_computed_in_common_workspace": false,
-    "source_identity_status": "REQUIRES_BYTE_PRESERVING_RETRIEVAL_WHEN_EXPLICITLY_DIRECTED"
+    "actual_v0_3_bytes_in_this_record": false,
+    "actual_full_sha256_computed_in_common_workspace": false,
+    "source_identity_status": "REQUIRES_BYTE_PRESERVING_RETRIEVAL_AND_REBIND"
   },
-  "future_comparison_contract": {
-    "authorization": "EXPLICIT_DIRECTION_REQUIRED",
-    "mode": "READ_ONLY_BYTE_LEVEL_COMPARISON",
+  "future_comparison_and_rebind_contract": {
+    "authorization": "EXACT_SOURCE_IDENTITIES_REQUIRED",
+    "mode": "READ_ONLY_BYTE_LEVEL_COMPARISON_AND_SOURCE_BOUND_PACKAGE_REBIND",
     "required_inputs": [
-      "actual source file bytes",
-      "explicit GitHub repository and exact ref or other candidate byte source",
-      "exact candidate path for every compared file"
+      "actual current v0.3 source file bytes",
+      "actual companion-profile and machine-package file bytes",
+      "exact role and filename for every current package component",
+      "explicit GitHub repository, exact ref, and exact path if a GitHub candidate is later designated"
     ],
     "required_observations": [
       "byte length",
@@ -126,9 +137,10 @@
       "UTF-8 BOM presence",
       "line-ending profile",
       "byte-identical or byte-different result",
-      "missing-source or missing-candidate status"
+      "missing-source or missing-candidate status",
+      "provenance and custody identity"
     ],
-    "allowed_results": [
+    "allowed_comparison_results": [
       "BYTE_IDENTICAL",
       "BYTE_DIFFERENT",
       "SOURCE_MISSING",
@@ -136,18 +148,34 @@
       "NOT_COMPARABLE"
     ]
   },
+  "github_freeze_rule": {
+    "preparation_pull_request_count": 8,
+    "default_disposition": "KEEP_DRAFT_AND_UNMERGED",
+    "p0_mutation_authority": "NOT_GRANTED",
+    "head_movement_effect": "NEW_SOURCE_SUBJECT_REVALIDATION_REQUIRED",
+    "handoff_records": [
+      "docs/PRE_P0_GITHUB_HANDOFF.md",
+      "docs/PRE_P0_GITHUB_HANDOFF.json"
+    ]
+  },
   "prohibited_inferences_and_actions": [
     "Do not infer adoption from file existence or identity.",
     "Do not infer execution from validation or comparison.",
-    "Do not publish, merge, normalize, rewrite, or repair source bytes during comparison preparation.",
+    "Do not upload, merge, normalize, rewrite, or repair current source bytes through this comparison record.",
+    "Do not issue overlapping v0.2-bound and v0.3-bound adoption instruments.",
     "Do not treat a Git blob SHA as a SHA-256 digest.",
+    "Do not merge the eight preparation pull requests as part of P0.",
+    "Do not change registry pins, releases, tags, or repository settings.",
     "Do not advance P0, F0, F1, F2, F3, or F4 from this record."
   ],
   "review_triggers": [
-    "an exact GitHub candidate path and ref is identified",
-    "actual source bytes or digests change",
+    "the exact v0.3 source bytes and full digests are available in one controlled workspace",
+    "the successor or consolidated adoption identity is finalized",
+    "the machine package is rebound",
+    "checksums or self-test outcomes change",
+    "an exact GitHub candidate path and ref is designated",
+    "any preparation pull-request head changes",
     "the control package is adopted or superseded",
-    "the active gate changes",
-    "a broader GitHub history or branch inventory is performed"
+    "the active gate changes"
   ]
 }
