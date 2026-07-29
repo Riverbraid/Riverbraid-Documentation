@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "record_id": "RB-AUDIT-FINAL-SCAFFOLD-CONTRACT-001",
+  "version": "1.0.0-candidate",
+  "status": "EXECUTION_CONTRACT_CANDIDATE",
+  "as_of": "2026-07-27",
+  "runtime": {
+    "runner": "ubuntu-24.04",
+    "node": "20.11.0",
+    "module_execution": "node --experimental-default-type=module audit_final.js",
+    "network_policy": "PUBLIC_GITHUB_READS_ONLY_DURING_SOURCE_ACQUISITION"
+  },
+  "repositories": [
+    {
+      "repository": "Riverbraid/Riverbraid-Governance-Gold",
+      "commit": "adc3ec8709565b48ec33766d8afcb7bed2cafa4c",
+      "expected_scope": "workflow-target-presence-check",
+      "required_files": ["README.md"]
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Types",
+      "commit": "b5bf4c5535328d2ef09ace6f2c4435ea6483766f",
+      "expected_scope": "workflow-target-presence-and-json-parse-check",
+      "required_files": ["README.md", "package.json"]
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Standard-IO",
+      "commit": "0131ff432d601adc3f324716fbeaf64fc40cc651",
+      "expected_scope": "workflow-target-presence-check",
+      "required_files": ["README.md"]
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Build-V5",
+      "commit": "4d4af57b18445f4ec73e8b48ce3cf9c737bb2589",
+      "expected_scope": "workflow-target-presence-check",
+      "required_files": ["README.md"]
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Liminal-Monitoring",
+      "commit": "cd43c2293211d61434d7a55571bc6e9585cdb5cf",
+      "expected_scope": "workflow-target-presence-check",
+      "required_files": ["README.md"]
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Secrets-Safe",
+      "commit": "6738580043137117b0450da756878f72d735f5fb",
+      "expected_scope": "workflow-target-presence-check",
+      "required_files": ["README.md"]
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Verification-Suite",
+      "commit": "d02c146a298577225fb05f436cf1fb402015f77f",
+      "expected_scope": "workflow-target-presence-check",
+      "required_files": ["README.md"]
+    }
+  ],
+  "required_positive_result": {
+    "exit_code": 0,
+    "status": "SCAFFOLD_CHECK_PASSED",
+    "claim_boundary": "presence-check-only-not-full-verification"
+  },
+  "required_negative_result": {
+    "mutation_scope": "DISPOSABLE_COPY_ONLY",
+    "removed_file": "README.md",
+    "exit_code": 1,
+    "status": "SCAFFOLD_CHECK_FAILED",
+    "missing_files_must_include": "README.md",
+    "claim_boundary": "presence-check-only-not-full-verification"
+  },
+  "claim_effect": "Successful execution establishes only that each exact script performed its declared bounded presence or parse check and failed closed when README.md was removed from a disposable copy.",
+  "nonclaims": [
+    "not full repository verification",
+    "not behavioral protocol verification",
+    "not certification",
+    "not external audit",
+    "not production readiness",
+    "not security hardening",
+    "not registry freshness",
+    "not F3 integration",
+    "not independent reproduction",
+    "not F0-F4 adoption or gate advancement"
+  ],
+  "review_triggers": [
+    "repository commit changes",
+    "audit_final.js bytes change",
+    "required-file set changes",
+    "audit scope or claim boundary changes",
+    "registry or F3 profile relationship changes"
+  ]
+}

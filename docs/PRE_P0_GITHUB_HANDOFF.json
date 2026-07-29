@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_id": "rb.pre-p0-github-handoff",
+  "schema_version": "1.0.0",
+  "record_id": "RB-PRE-P0-GITHUB-HANDOFF-001",
+  "created_at": "2026-07-29T01:20:00Z",
+  "created_by": "OpenAI ChatGPT acting as Riverbraid co-builder under explicit founder direction",
+  "status": "PROPOSED_NONCONTROLLING_GITHUB_PREPARATION_HANDOFF",
+  "current_gate": "P0-DISC-001",
+  "manual_state": {
+    "current_proposed_version": "v0.3-proposed",
+    "adoption_status": "NOT_ADOPTED",
+    "p0_status": "NOT_EXECUTED",
+    "f0_status": "NOT_CLOSED",
+    "historical_lineage": [
+      "v0.2-proposed"
+    ],
+    "known_identity_split": {
+      "status": "PRE_P0_HOLD",
+      "current_manual_digest_prefix": "1643b9d9",
+      "legacy_machine_package_manual_digest_prefix": "5a6be223",
+      "full_digest_rebind": "SOURCE_BOUND_BYTES_REQUIRED",
+      "required_resolution": "Rebuild or amend the machine-package manifest and successor adoption identity against the exact v0.3 bytes and companion profile; recompute checksums and rerun self-tests; preserve v0.2 as historical lineage."
+    }
+  },
+  "github_preparation_pull_requests": [
+    {
+      "repository": "Riverbraid/Riverbraid-Core",
+      "pull_request": 7,
+      "branch": "agent/precision-hardening",
+      "head_sha": "699567de01e83494a8f4a00b503b322ff61b410c",
+      "state": "OPEN_DRAFT_MERGEABLE_AT_OBSERVATION",
+      "evidence": [
+        "GitHub Actions run 30285743307 completed successfully"
+      ],
+      "bounded_role": "Core claim-boundary and live-compatibility preparation; not pinned reproduction"
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Evaluation-Kit",
+      "pull_request": 13,
+      "branch": "agent/claim-ceiling",
+      "head_sha": "868341e2a26ae1ac912be170a2930034b06623ee",
+      "state": "OPEN_DRAFT_MERGEABLE_AT_OBSERVATION",
+      "evidence": [
+        "GitHub Actions run 30286309516, job 90044856022 completed successfully"
+      ],
+      "bounded_role": "Claim ceiling, allowlist denial, lifecycle-script denial, digest-bound Docker identity, and pinned-profile execution"
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Golds",
+      "pull_request": 6,
+      "branch": "agent/public-repository-classification",
+      "head_sha": "57fcbdbe9677debd6795ee3b423d99dccbc9b7f0",
+      "state": "OPEN_DRAFT_MERGEABLE_AT_OBSERVATION",
+      "evidence": [
+        "GitHub Actions run 30287153753, job 90047680173 completed successfully"
+      ],
+      "bounded_role": "Machine-readable 52-repository classification without assigning F3/F4 membership"
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Documentation",
+      "pull_request": 26,
+      "branch": "agent/classification-crosswalk",
+      "head_sha_at_preparation_observation": "d41c1a19f707654378648b48fefc29aef6f4bfb7",
+      "state": "OPEN_DRAFT_MERGEABLE_AT_OBSERVATION",
+      "evidence": [
+        "GitHub Actions run 30291197926 completed successfully before this handoff update",
+        "GitHub Actions run 30291197712, job 90061129706 completed successfully before this handoff update"
+      ],
+      "bounded_role": "Central noncontrolling crosswalk, evidence-state documentation, source-custody boundary, and this GitHub handoff",
+      "self_update_note": "This handoff is committed on the same branch and therefore advances the branch head. Read the post-update head from pull-request metadata and revalidate it before later use."
+    },
+    {
+      "repository": "Riverbraid/.github",
+      "pull_request": 5,
+      "branch": "agent/public-entry-claim-precision",
+      "head_sha": "40916bf7425821ed29e8cf405500387eaffe5129",
+      "state": "OPEN_DRAFT_MERGEABLE_AT_OBSERVATION",
+      "evidence": [
+        "GitHub Actions run 30288559207 completed successfully",
+        "GitHub Actions run 30288559466, job 90052333806 completed successfully"
+      ],
+      "bounded_role": "User-account governance and community-health candidate; manual settings and personal-profile repository remain open"
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Refusal-Gold",
+      "pull_request": 7,
+      "branch": "agent/fail-closed-execution-evidence",
+      "head_sha": "a05c341af05fe9b5663c5dc8d6e85084e0118cdc",
+      "state": "OPEN_DRAFT_MERGEABLE_AT_OBSERVATION",
+      "evidence": [
+        "GitHub Actions run 30288938156, job 90053623558 completed successfully"
+      ],
+      "bounded_role": "Positive verifier and missing-required-file fail-closed evidence for the exact draft head"
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Harness-Gold",
+      "pull_request": 6,
+      "branch": "agent/runtime-binding-blocked-state",
+      "head_sha": "e054407becc9d995b023042a24eaf0c7cae5e0b7",
+      "state": "OPEN_DRAFT_MERGEABLE_AT_OBSERVATION",
+      "evidence": [
+        "GitHub Actions run 30289790880, job 90056469679 completed successfully",
+        "GitHub Actions run 30289790890, job 90056470184 completed successfully"
+      ],
+      "bounded_role": "Mechanically checked runtime-binding blocker state; direct GPG execution remains NOT_ASSESSED"
+    },
+    {
+      "repository": "Riverbraid/Riverbraid-Gold-V2",
+      "pull_request": 3,
+      "branch": "agent/workspace-dependency-boundary",
+      "head_sha": "9124578dbc7ec1285accc7098df6453fbbab51ec",
+      "state": "OPEN_DRAFT_MERGEABLE_AT_OBSERVATION",
+      "evidence": [
+        "GitHub Actions run 30289561901, job 90055700184 completed successfully"
+      ],
+      "bounded_role": "Explicit optional-workspace unavailable state and local verify/build evidence; real pinned sibling execution remains open"
+    }
+  ],
+  "freeze_rule": {
+    "merge_authority": "NOT_GRANTED_BY_THIS_RECORD",
+    "mutation_during_p0": "NOT_AUTHORIZED",
+    "head_identity_rule": "Any head change creates a new source subject and requires revalidation before use.",
+    "default_action": "KEEP_DRAFT_AND_UNMERGED_UNTIL_A_LATER_ATTRIBUTABLE_DISPOSITION"
+  },
+  "next_permitted_github_action": "Preserve this handoff and the explicit machine-package rebind hold. Do not merge or treat any draft as adopted F0-F4 source.",
+  "prohibited_actions": [
+    "Do not upload or normalize the v0.3 control-package bytes through this handoff.",
+    "Do not merge the eight preparation pull requests as part of P0.",
+    "Do not change registry pins, releases, tags, or repository settings.",
+    "Do not treat successful draft-head workflows as F0-F4 closure evidence.",
+    "Do not infer F3 or F4 membership from public repository classification."
+  ],
+  "claim_effect": "NONE",
+  "nonclaims": [
+    "This record does not adopt the v0.3 manual or any adoption instrument.",
+    "This record does not establish PRE_P0_READY.",
+    "This record does not execute P0 discovery.",
+    "This record does not close F0.",
+    "This record does not establish independent reproduction, production readiness, certification, external audit, or absence of defects."
+  ]
+}

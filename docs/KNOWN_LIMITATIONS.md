@@ -1,6 +1,7 @@
 # Known Limitations
 
 **Status**: EVIDENCE LEDGER / NOT AN APOLOGY  
+**As of**: 2026-07-27  
 **Security claim**: NONE  
 **Production readiness claim**: NONE  
 **External audit claim**: NONE
@@ -14,19 +15,23 @@ Known limitations are the current edge of the evidence. They are not hidden. The
 | Security hardening not complete | EVIDENCE_GATED | Confirm branch protection, rulesets, secret scanning, push protection, Dependabot, CodeQL, vulnerability reporting, and required checks. |
 | External audit not complete | NOT_CLAIMED | Independent review or audit with preserved findings. |
 | Production readiness not complete | NOT_CLAIMED | Security review, deployment boundary, support model, incident response, registry succession, and negative tests. |
-| Registry covers 30 entries while active constellation has 52 repositories | SCOPE_GAP_DOCUMENTED | Registry expansion gate, candidate classification, evidence, verifier depth, and expected-results update. |
+| Registry covers 30 entries while the public account has 52 repositories | SCOPE_GAP_CLASSIFIED | Preserve role, lifecycle, registry membership, verification depth, and future F3/F4 membership as separate dimensions. |
 | Verification depth varies across registry entries | CLASSIFIED_AT_COMMAND_LEVEL | Package-script-level and domain-verifier-depth classification. |
-| Presence-check-only repositories exist | BOUNDED | Keep as support surfaces or upgrade under a separate gate. |
-| Refusal-Gold fail-closed patch requires execution evidence | PATCHED_UNVERIFIED | Valid and invalid-state execution outputs proving fail-closed behavior. |
-| Harness-Gold runtime GPG patch requires execution evidence | PATCHED_UNVERIFIED | Valid and invalid GPG-path outputs proving fail-closed behavior. |
-| Evaluation Kit allowlist patch requires execution evidence | PATCHED_UNVERIFIED | Allowed command success and unlisted command fail-closed output. |
-| Gold-V2 dependency boundary remains | PATCHED_UNVERIFIED / DEPENDENCY_BOUNDARY | Dependency-boundary decision and failure evidence. |
-| Docker base image digest remains evidence-gated | OPEN | Exact image digest evidence, Dockerfile update decision, and environment lock update. |
-| Workflows use `ubuntu-latest` in some repositories | INVENTORY_ITEM | Runner pinning decision or explicit reproducibility boundary. |
-| Workflows use tag-pinned actions in some repositories | INVENTORY_ITEM | SHA-pinning decision or explicit boundary. |
+| Presence-check-only repositories exist | BOUNDED / EXECUTED_AT_DECLARED_DEPTH | Keep the shallow claim visible. Seven `audit_final.js` scaffold targets passed exact positive and missing-README negative cases in run `30290915464`, job `90060197818`; this does not upgrade them into deep verifiers. |
+| Phase 2.6 petal depth | EXECUTED_BOUNDED_AT_PINNED_COMMITS | Evaluation Kit run `30286309516`, job `90044856022`, executed the exact pinned `npm test` commands. Memory is multi-vector behavioral; Judicial and Safety are canonical-vector checks; Integration is a canonical coherence check, not F3 integration. Add negative fixtures only if deeper claims are required. |
+| Refusal-Gold fail-closed behavior | EXECUTED_BOUNDED_ON_DRAFT / PENDING_MAIN | Draft head `a05c341af05fe9b5663c5dc8d6e85084e0118cdc` passed run `30288938156`, job `90053623558`, including positive verification and an isolated missing-required-file exit-code-1 case. Merge/adopt the evidence-producing test and obtain a resulting exact-main-head run before closing the repository issue. |
+| Harness-Gold runtime GPG binding | BLOCKED_BY_SOURCE_CONTRACT / GPG_NOT_ASSESSED | The observed source lacks `bin/verify-swarm.cjs` and `riverbraid-shield.js`, and both `.js` entrypoints use CommonJS under `type: module`. Draft head `e054407becc9d995b023042a24eaf0c7cae5e0b7` mechanically confirms the blocker; recover/implement dependencies, reconcile module format, then run direct valid/invalid/missing/CI GPG tests. |
+| Evaluation Kit command, lifecycle-script, action, runner, and base-image controls | EXECUTED_BOUNDED | Exact draft head `868341e2a26ae1ac912be170a2930034b06623ee` passed run `30286309516`, job `90044856022`, including base-identity matching, unsupported-command denial, lifecycle-script denial, digest-pinned Docker build, and `REPRODUCTION_MATCH`. |
+| Evaluation Kit OS and npm dependency acquisition use the network | OPEN / NON_HERMETIC_BOUNDARY | Adopt an offline or frozen OS/npm dependency profile with exact identities and execution evidence, or explicitly accept the bounded network-dependent profile. |
+| Evaluation Kit Docker base-image digest | PINNED_AND_EXECUTED | Bound to `sha256:ecc9a2581f8588014a49a523a9ed146d27963f6d988d11bd16bbdcb3598f5f98`; exact-head identity check and full evaluation passed. Future tag/digest drift remains a review trigger. |
+| Gold-V2 optional workspace dependency boundary | BOUNDARY_EXECUTED_BOUNDED_ON_DRAFT / REAL_WORKSPACE_OPEN | Draft head `9124578dbc7ec1285accc7098df6453fbbab51ec` passed run `30289561901`, job `90055700184`; missing siblings are classified as `WORKSPACE_DEPENDENCY_UNAVAILABLE` with exit code `2`, and local verify/build pass. Main incorporation and real pinned sibling execution remain open. |
+| Some repositories still use movable runner labels | INVENTORY_ITEM | Pin implementation-critical workflows or preserve an explicit mutable-runner boundary. Several current draft repairs now use `ubuntu-24.04`. |
+| Some repositories still use tag-pinned actions | INVENTORY_ITEM | SHA-pin implementation-critical actions or preserve an explicit action-identity boundary. Current Core, Evaluation Kit, Golds, Documentation, `.github`, Refusal-Gold, Harness-Gold, and Gold-V2 draft workflows use exact action commits where modified. |
 | Current-tree audit is not a full history audit | BOUNDED_NON_FINDING | Git history, release asset, workflow artifact, and local archive scans. |
+| F0–F4 manual and schema filenames were not located on the observed GitHub surface | BOUNDED_NON_FINDING | No GitHub action is required unless an exact repository candidate is identified. Any future comparison must use byte-preserving retrieval and SHA-256 in a common controlled workspace. |
+| F0–F4 control package is not adopted or executed | PROPOSED_NOT_ADOPTED_NOT_EXECUTED | Explicit founder adoption and subsequent gate-authorized execution only when the controlling package permits it. |
 | License audit remains incomplete | OPEN | Full license surface inventory and legal review where needed. |
-| Community health normalization remains a policy decision | OPEN | Decide central `.github` only versus per-repo files. |
+| Shared governance and community-health surface | VALIDATED_DRAFT / PENDING_MERGE_AND_ACCOUNT_SETTINGS | `.github` draft head `40916bf7425821ed29e8cf405500387eaffe5129` passed existing Verify run `30288559207` and Community Health Invariants run `30288559466`. Manual creation of `Riverbraid/Riverbraid`, private vulnerability-reporting/settings checks, inheritance observation, and merge remain open. |
 
 ## Required claim rule
 
