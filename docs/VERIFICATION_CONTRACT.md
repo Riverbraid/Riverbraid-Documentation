@@ -1,50 +1,37 @@
 # Verification Contract
 
-**Status**: DRAFT / INFORMATIVE
-**Authority boundary**: Documentation only
-**Verification claim**: NONE
+A Riverbraid verification result is a bounded mechanical record, not a general verdict.
 
-## Purpose
+## Required result identity
 
-This document defines what a repository must show before claiming verified status.
+A current mechanical reproduction result must record:
 
-A repository should not claim verified status merely because files exist.
+- `result_id`
+- `subject_ref`
+- exact `subject_commit`
+- `profile_ref`
+- exact profile-definition digest
+- `evaluator_ref`
+- exact `evaluator_commit`
+- environment
+- named checks and their scoped outcomes
+- evidence references
+- explicit nonclaims
 
-## Evidence ladder
+## Check-contract binding
 
-Future verification language should separate:
+The current Evaluation-Kit successor profile also binds the exact SHA-256 bytes of Core's `mechanical-profile.json` and `mechanical-verify.mjs`.
 
-- files present
-- tests present
-- verifier present
-- verifier executed
-- workflow passed
-- registry pinned
-- release tagged
-- external review received
+The evaluator must refuse to accept PASS if the subject commit contains different check-contract bytes, even if a file with the same name reports PASS.
 
-## Claim rule
+## Result vocabulary
 
-A claim only graduates when the evidence surface supports it.
+Allowed scoped outcomes are:
 
-A repository with clear language but no verification path is readable, but not mechanically mature.
+`PASS`, `FAIL`, `BLOCKED`, `UNAVAILABLE`, `NOT_ASSESSED`, `INVALID_ATTEMPT`.
 
-## Required evidence record
+These terms do not imply truth, certification, evidentiary weight, maturity, risk, readiness, or general suitability.
 
-```md
-Claim:
-Evidence surface:
-Repository:
-Path:
-Commit:
-Workflow run:
-Registry entry:
-Current status:
-Unverified boundary:
-```
+## Historical profiles
 
-## Non claims
-
-This document does not verify any repository.
-
-This document does not create registry status, release status, security status, or external review status.
+The old 30-repository governance-floor profile retains a separate historical identity. Its prior results are not replayed as evidence for the successor profile.
