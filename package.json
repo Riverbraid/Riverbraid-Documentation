@@ -1,8 +1,14 @@
 {
-  "name": "riverbraid-documentation",
-  "version": "1.0.0",
   "license": "MIT",
+  "name": "riverbraid-documentation",
+  "riverbraid": {
+    "project_authority": "none",
+    "protocol_authority": "none",
+    "role": "documentation-currentness-navigation"
+  },
   "scripts": {
-    "test": "node -e \"console.log('riverbraid-documentation: Verified')\""
-  }
+    "test": "node verify-documentation.mjs",
+    "verify:documentation-boundary": "node verify-documentation.mjs"
+  },
+  "version": "1.0.0"
 }

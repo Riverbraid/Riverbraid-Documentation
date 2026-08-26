@@ -1,47 +1,20 @@
-# What PASS Means / Does Not Mean
+# What a scoped PASS means
 
-**Status**: CLAIM BOUNDARY REFERENCE  
-**Applies to**: Riverbraid verification surfaces unless a repository defines a narrower boundary.
+`PASS` has no Riverbraid-wide meaning by itself.
 
-## PASS means
+A PASS is valid only relative to an exact:
 
-A PASS means:
+- subject;
+- subject identity/commit;
+- profile or check contract;
+- evaluator and evaluator identity;
+- environment;
+- executed checks;
+- evidence references;
+- explicit nonclaims.
 
-- the configured verifier completed successfully
-- the configured evidence path was followed
-- the bounded claim survived that specific check
-- the result is inspectable within the stated scope
+For the current mechanical reproduction profile, PASS means only that the exact bound Core check-contract bytes were present at the exact subject commit and the declared mechanical checks returned PASS under the recorded evaluator/environment.
 
-For the Evaluation Kit, PASS means the pinned registry was cloned at exact commits, configured verification commands completed, and outputs matched the expected results for that bounded surface.
+PASS does **not** mean truth, trustworthiness, evidentiary weight, certification, legal approval, production readiness, external audit, complete safety, general suitability, or proof of downstream AI behavior.
 
-## PASS does not mean
-
-A PASS does **not** mean:
-
-- certification
-- legal approval
-- production readiness
-- external audit
-- absolute security
-- complete AI safety
-- defect-free status
-- compliance with any regulation or standard
-- suitability for any specific risk profile
-- uniform verifier depth across every repository
-- proof of downstream AI system behavior
-
-## FAIL means
-
-A FAIL means the bounded claim did not survive that evidence path.
-
-A fail-closed result should stop stronger claims until the cause is understood and new evidence exists.
-
-## Required claim rule
-
-```text
-The claim must be smaller than or equal to the evidence.
-```
-
-## Boundary
-
-This file is a claim-boundary reference. It does not change any verifier, registry pin, workflow, release, tag, protocol file, hash, seal, manifest, or secret.
+`FAIL`, `BLOCKED`, `UNAVAILABLE`, `NOT_ASSESSED`, and `INVALID_ATTEMPT` are equally scoped outcomes. None is a global semantic judgment about the subject.

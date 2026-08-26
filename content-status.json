@@ -1,0 +1,51 @@
+{
+  "classification_meaning": {
+    "CURRENT": "current Riverbraid Documentation navigation or machine-support surface",
+    "EXPERIMENTAL_PROFILE": "attributed experimental/proposal material; not Core semantics",
+    "HISTORICAL": "preserved prior Riverbraid material; not a current navigation entrypoint"
+  },
+  "current_exact": [
+    "README.md",
+    "CURRENT.md",
+    "AUTHORITY.md",
+    "RING.md",
+    "content-status.json",
+    "package.json",
+    "verify-documentation.mjs",
+    ".github/workflows/verify.yml",
+    ".github/ISSUE_TEMPLATE/external_review_finding.md",
+    ".github/ISSUE_TEMPLATE/security_concern.md",
+    ".github/ISSUE_TEMPLATE/profile_or_vocabulary_proposal.md",
+    ".github/ISSUE_TEMPLATE/mechanical_profile_change.md",
+    ".github/pull_request_template.md",
+    "docs/RIVERBRAID_IN_10_MINUTES.md",
+    "docs/ARCHITECTURE_MAP.md",
+    "docs/SYSTEM_MAP.md",
+    "docs/WHAT_PASS_MEANS.md",
+    "docs/KNOWN_LIMITATIONS.md",
+    "docs/GOVERNANCE_AUTHORITY_BOUNDARIES.md",
+    "docs/VERIFICATION_CONTRACT.md"
+  ],
+  "default_classification": "HISTORICAL",
+  "experimental_exact": [
+    "docs/USE_CASE_PROFILES.md",
+    "docs/profiles/DATA_CENTER_AI_INFRASTRUCTURE.md",
+    "docs/PILOT_PROPOSAL_TEMPLATE.md",
+    "docs/DOMAIN_EXPERT_REVIEW_LANES.md",
+    "docs/RB_CLI_DESIGN.md",
+    "docs/EVIDENCE_PACKET_GENERATOR.md",
+    "docs/DRIFT_MONITORING_PLAN.md"
+  ],
+  "experimental_prefix": [
+    "coherence-witness/"
+  ],
+  "nonclaim": "Navigation classification is not truth, quality, evidentiary weight, importance, verification, maturity, risk, readiness, certification, adoption, or legitimacy.",
+  "precedence": [
+    "CURRENT_EXACT",
+    "EXPERIMENTAL_EXACT",
+    "EXPERIMENTAL_PREFIX",
+    "DEFAULT_HISTORICAL"
+  ],
+  "schema": "riverbraid.documentation-content-status.v0.2",
+  "status": "R3_CANDIDATE_NAVIGATION_CLASSIFICATION"
+}

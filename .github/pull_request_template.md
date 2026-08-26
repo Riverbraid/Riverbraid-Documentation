@@ -2,22 +2,29 @@
 
 Describe what changed.
 
-## Boundary
+## Plane / boundary
 
 Check all that apply:
 
-- [ ] Documentation only
-- [ ] Code change
-- [ ] Workflow change
-- [ ] Registry change
-- [ ] Verifier change
-- [ ] Hash/seal/manifest change
-- [ ] Release/tag change
+- [ ] Documentation/currentness only
+- [ ] Mechanical Core grammar
+- [ ] Declared profile or vocabulary
+- [ ] Riverbraid project governance
+- [ ] Workflow/tooling
+- [ ] Historical preservation/lifecycle
+- [ ] Verifier/check-contract bytes
+- [ ] Release/tag (separate authority required where applicable)
 
 ## Evidence
 
-Describe evidence or say `NOT_EXECUTED`.
+Provide exact subject/path/commit/digest evidence or say `NOT_EXECUTED`.
 
-## Non-claims
+## Primitive-boundary check
 
-This PR does not claim stronger status than the evidence supports.
+- [ ] No universal truth/trust/evidentiary-weight/legitimacy interpretation was introduced.
+- [ ] Any interpretive vocabulary/profile is attributed and scoped.
+- [ ] Build-control machinery was not promoted into Core merely because Riverbraid uses it internally.
+
+## Nonclaims
+
+State what this change does not establish.

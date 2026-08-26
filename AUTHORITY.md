@@ -1,15 +1,12 @@
-# AUTHORITY
-Repository: Riverbraid-Documentation
-Ring: 3
-Class: documentation
+# Riverbraid-Documentation authority
 
-## Authority Boundary
-This repository is a peripheral Riverbraid repository.
-Riverbraid-Core is the normative source for protocol authority, audit behavior, and claim boundaries. This repository may support organization configuration, documentation, static generation, or peripheral communication surfaces, but it does not redefine Riverbraid protocol semantics.
+**Role:** EXPLANATION_AND_CURRENTNESS_NAVIGATION  
+**Protocol authority:** NONE  
+**Project authority:** NONE  
+**Navigation authority:** CURRENTNESS_MAP_ONLY
 
-## Claim Boundary
-This repository may describe, render, organize, or support the Riverbraid constellation.
-It does not independently verify the full Riverbraid architecture. It does not expand the Core claim boundary. Any broader claims around True AI, mathematical physics of cognition, memory-flow-truth braiding, resonance, or intent-aware compute remain experimental unless implemented and verified in dedicated repositories.
+This repository may explain Riverbraid and identify which Documentation paths are current, experimental, or historical.
 
-## Role
-Documentation surface for Riverbraid explanatory and reference material.
+That currentness classification does not determine truth, quality, evidentiary weight, importance, maturity, risk, readiness, certification, adoption, legitimacy, or correct interpretation.
+
+Mechanical protocol authority is limited to `Riverbraid-Core` and only within its mechanical grammar. Riverbraid project adoption/supersession/lifecycle authority is recorded in `Riverbraid-Governance`.
