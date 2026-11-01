@@ -47,7 +47,8 @@ Riverbraid is not:
 6. Start with `Riverbraid-Evaluation-Kit`.
 7. Inspect the verified registry.
 8. Review `docs/VERIFICATION_DEPTH_CLASSIFICATION.md`.
-9. Treat any adaptation as its own responsibility.
+9. Read `docs/OBSERVATION_FRAME_AND_BLIND_SPOTS.md` before interpreting a combined PASS.
+10. Treat any adaptation as its own responsibility.
 
 ## First-reader and adoption surfaces
 
