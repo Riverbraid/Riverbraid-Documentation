@@ -65,6 +65,10 @@ The registry contains 30 pinned entries and configured verification commands.
 | Riverbraid-Bio-Gold | `npm test` | NPM_TEST_REPO_VERIFIER | Depends on package script and verifier implementation. |
 | Riverbraid-Flow-Gold | `npm test` | NPM_TEST_REPO_VERIFIER | Depends on package script and verifier implementation. |
 
+## Observation-frame clarification (November 1, 2026)
+
+The public runner at Kit commit `cd814ac415d7952e524c8edd5c595d77189ed24d` reports `external_reproduction: ($failing == 0)`. This boolean measures aggregate configured-command success only. It does not classify the operator, source acquisition, workspace, evaluation, or human intervention as independent. Four entries are presence-only, so a 30/30 count must retain per-member depth. An unhandled `npm ci` failure may stop the runner before its final result JSON; no output is not a pass. See [Observation frames and blind spots](OBSERVATION_FRAME_AND_BLIND_SPOTS.md). This is documentation of source behavior, not a new execution result or registry change.
+
 ## Required claim rule
 
 A registry pass means the configured command exited successfully for the pinned commit.
